@@ -1,0 +1,2002 @@
+{
+  "schema": "areal-tik-evidence-v1",
+  "archive": "records.tar.gz",
+  "archive_sha256": "18b74622ee84daaf013eb11b1f4dae331ec6a5f20a8da633a04ce3f888c4dba1",
+  "description": "Original JSON and text evidence, preserved byte for byte and indexed by SHA-256. Resolve manifest/validation record_sha256 through records.",
+  "records": {
+    "0221f8c0e2f549a39aca8cb880b838577442082f8835c412f78636955f61147e": {
+      "member": "0221f8c0e2f549a39aca8cb880b838577442082f8835c412f78636955f61147e.json",
+      "bytes": 17587,
+      "original_records": [
+        "auto-pilot-kernel-a100/gpt6_20260906/results/short_neighbors.json"
+      ],
+      "format": "json"
+    },
+    "032588ed6c22807a7cccf14a16dd57bcaca4e0dd64fdcd150b2fe1c0cfbad2b5": {
+      "member": "032588ed6c22807a7cccf14a16dd57bcaca4e0dd64fdcd150b2fe1c0cfbad2b5.json",
+      "bytes": 661,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_280_result.json"
+      ],
+      "format": "json"
+    },
+    "04acad9298ce356ed2f9e056840a121bc322a088c4e99c4efce9e0ff401f97dc": {
+      "member": "04acad9298ce356ed2f9e056840a121bc322a088c4e99c4efce9e0ff401f97dc.json",
+      "bytes": 97292,
+      "original_records": [
+        "auto-pilot-kernel-h200/gpt6_20260905/results/baseline_graph.json"
+      ],
+      "format": "json"
+    },
+    "05dbe2b09da4766f51ec300e9854a604c4b55b4e45ce4844400897716ed731ef": {
+      "member": "05dbe2b09da4766f51ec300e9854a604c4b55b4e45ce4844400897716ed731ef.json",
+      "bytes": 874,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_303_result.json"
+      ],
+      "format": "json"
+    },
+    "06cb65f5fa6f00d9cfbdc6d2fa6ba85a4411c408629ec237e70dbe6298bbc62b": {
+      "member": "06cb65f5fa6f00d9cfbdc6d2fa6ba85a4411c408629ec237e70dbe6298bbc62b.json",
+      "bytes": 561,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_208_result.json"
+      ],
+      "format": "json"
+    },
+    "0965313c40d8ee35960e58512781d91069bfe5b3b1158d21858569fa959c25ad": {
+      "member": "0965313c40d8ee35960e58512781d91069bfe5b3b1158d21858569fa959c25ad.json",
+      "bytes": 1189,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_156_result.json"
+      ],
+      "format": "json"
+    },
+    "097d5d38be7c24fb3f6d7458cbda653a163c46e3be49c70242a55cc6ee7fea5d": {
+      "member": "097d5d38be7c24fb3f6d7458cbda653a163c46e3be49c70242a55cc6ee7fea5d.json",
+      "bytes": 651,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_235_result.json"
+      ],
+      "format": "json"
+    },
+    "126aca6e5bd2c140a7b6bc9836545b9ba78f9e7ac7c0c6655796deacc9aed644": {
+      "member": "126aca6e5bd2c140a7b6bc9836545b9ba78f9e7ac7c0c6655796deacc9aed644.json",
+      "bytes": 530,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_201_result.json"
+      ],
+      "format": "json"
+    },
+    "1307675ac4dfbc98e4a8c60726b51324fcd3b3e6d6f18a787b35b4508ade36f7": {
+      "member": "1307675ac4dfbc98e4a8c60726b51324fcd3b3e6d6f18a787b35b4508ade36f7.json",
+      "bytes": 1723270,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/postsearch_grid/output/run/results.json"
+      ],
+      "format": "json"
+    },
+    "152d935021acd8e9aa094586c0b5b6e463c9824c97b84dc8e199172d8c8ef210": {
+      "member": "152d935021acd8e9aa094586c0b5b6e463c9824c97b84dc8e199172d8c8ef210.json",
+      "bytes": 530,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_206_result.json"
+      ],
+      "format": "json"
+    },
+    "1566015ed4d145f765cd8413d690dc07cdad25a3ea456e7b09fb9d6ac20d877d": {
+      "member": "1566015ed4d145f765cd8413d690dc07cdad25a3ea456e7b09fb9d6ac20d877d.json",
+      "bytes": 586,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_200_result.json"
+      ],
+      "format": "json"
+    },
+    "15b9850d49ad1a697c70ce8c9f18a838b9ac1bac72deab708a2fc8c897e26ad4": {
+      "member": "15b9850d49ad1a697c70ce8c9f18a838b9ac1bac72deab708a2fc8c897e26ad4.json",
+      "bytes": 1259,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/iteration_79_result.json"
+      ],
+      "format": "json"
+    },
+    "16ddf0162890bdaa14e8163a50cf6b8c14bf72f3a4c72c4c86119b16c21c5de3": {
+      "member": "16ddf0162890bdaa14e8163a50cf6b8c14bf72f3a4c72c4c86119b16c21c5de3.json",
+      "bytes": 648,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_222_result.json"
+      ],
+      "format": "json"
+    },
+    "17c4d5dacaafa7afc8f1a00dcfe41b2116d467627e6a74655b32b99d07b3c501": {
+      "member": "17c4d5dacaafa7afc8f1a00dcfe41b2116d467627e6a74655b32b99d07b3c501.json",
+      "bytes": 1018,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_310_result.json"
+      ],
+      "format": "json"
+    },
+    "196fa334f11ae5a11a799137e801a62b6af7af106e13d5e4ebbf6b265f905a24": {
+      "member": "196fa334f11ae5a11a799137e801a62b6af7af106e13d5e4ebbf6b265f905a24.json",
+      "bytes": 2733,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/iteration_89_result.json"
+      ],
+      "format": "json"
+    },
+    "1a1008278655e5da748fa7c588cd09dea9a39c9ac36193fc5602306dd71fd5c8": {
+      "member": "1a1008278655e5da748fa7c588cd09dea9a39c9ac36193fc5602306dd71fd5c8.json",
+      "bytes": 773967,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/kb_no_lineage/service/evaluation-002/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "1a98c7da0c0b3c4a30f720d152f2363c3bd7aad7e5f9a18af288ce10932d97ff": {
+      "member": "1a98c7da0c0b3c4a30f720d152f2363c3bd7aad7e5f9a18af288ce10932d97ff.json",
+      "bytes": 1118,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_220_result.json"
+      ],
+      "format": "json"
+    },
+    "1cbfbff15975f08934d9676f03a054c871722c94bb42d8080dd8e3ff5fa79011": {
+      "member": "1cbfbff15975f08934d9676f03a054c871722c94bb42d8080dd8e3ff5fa79011.json",
+      "bytes": 884,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_305_result.json"
+      ],
+      "format": "json"
+    },
+    "1e80af290a540632810fc387e1679fb3bd6acb9a5e2a7fd8429352953a439beb": {
+      "member": "1e80af290a540632810fc387e1679fb3bd6acb9a5e2a7fd8429352953a439beb.json",
+      "bytes": 881,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_230_result.json"
+      ],
+      "format": "json"
+    },
+    "1f9237c202617b0a5c82e63e96e338f0e69374737267bafb71a3b2a6a4d87f24": {
+      "member": "1f9237c202617b0a5c82e63e96e338f0e69374737267bafb71a3b2a6a4d87f24.json",
+      "bytes": 1191,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_150_result.json"
+      ],
+      "format": "json"
+    },
+    "21241022adf2026f317d97de16fe15304a698561d744c35f9f7a99a9ae502088": {
+      "member": "21241022adf2026f317d97de16fe15304a698561d744c35f9f7a99a9ae502088.json",
+      "bytes": 1723,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_183_result.json"
+      ],
+      "format": "json"
+    },
+    "213c6000f9cb7f88ba1d597e80d76e6042ca33ede54a3b74cacded26c22f066c": {
+      "member": "213c6000f9cb7f88ba1d597e80d76e6042ca33ede54a3b74cacded26c22f066c.json",
+      "bytes": 1851,
+      "original_records": [
+        "auto-pilot-kernel-h200/gpt6_20260905/results/attention_partition_final.json"
+      ],
+      "format": "json"
+    },
+    "225f9ceed37e7aa514e647e01edfe3bbb38860129ca862eb9ad078dde4d47345": {
+      "member": "225f9ceed37e7aa514e647e01edfe3bbb38860129ca862eb9ad078dde4d47345.json",
+      "bytes": 238718,
+      "original_records": [
+        "auto-pilot-kernel-h200/gpt6_20260905/results/final_paired.json"
+      ],
+      "format": "json"
+    },
+    "245268f7474efbff357866647a5af937103d6949ed8dc6f98da04c59a4b897d3": {
+      "member": "245268f7474efbff357866647a5af937103d6949ed8dc6f98da04c59a4b897d3.json",
+      "bytes": 774181,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/kb_no_history/service/evaluation-003/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "2529cf2b6df763c6a01c1dfc9560854afe795c813c72200620bafb5a9f581082": {
+      "member": "2529cf2b6df763c6a01c1dfc9560854afe795c813c72200620bafb5a9f581082.json",
+      "bytes": 771,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_215_result.json"
+      ],
+      "format": "json"
+    },
+    "255f30287443ae77dc4594e55001db4fb36ce6ed745f3a0434948bffc029a5a9": {
+      "member": "255f30287443ae77dc4594e55001db4fb36ce6ed745f3a0434948bffc029a5a9.json",
+      "bytes": 836,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_297_result.json"
+      ],
+      "format": "json"
+    },
+    "25994540edd742d974f30af09264e3ad50c5b62381a4ef9ec5e45c90e9bfe107": {
+      "member": "25994540edd742d974f30af09264e3ad50c5b62381a4ef9ec5e45c90e9bfe107.json",
+      "bytes": 1236,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_171_result.json"
+      ],
+      "format": "json"
+    },
+    "25ec6b180c65d91b1d8d9b02e249b9e4a372287f714e7e5749264229d73f169a": {
+      "member": "25ec6b180c65d91b1d8d9b02e249b9e4a372287f714e7e5749264229d73f169a.json",
+      "bytes": 3402,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_137_result.json"
+      ],
+      "format": "json"
+    },
+    "28b35da7f0c3a680de12f073240231ab889f7b2fcb0152ee0246a1f9c4f36ad6": {
+      "member": "28b35da7f0c3a680de12f073240231ab889f7b2fcb0152ee0246a1f9c4f36ad6.json",
+      "bytes": 105904,
+      "original_records": [
+        "auto-pilot-kernel-a100/gpt6_20260906/results/baseline_qualification.json"
+      ],
+      "format": "json"
+    },
+    "29d4a112d3db661ca6d665e80071cbb11cbd7edd69dfdc902ee19e7b755c509f": {
+      "member": "29d4a112d3db661ca6d665e80071cbb11cbd7edd69dfdc902ee19e7b755c509f.json",
+      "bytes": 774125,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/skydiscover_adaevolve/service/evaluation-002/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "2ad575f2465de6809b0ff9b427a2c253ef04d6411604f149643bdfc09e135908": {
+      "member": "2ad575f2465de6809b0ff9b427a2c253ef04d6411604f149643bdfc09e135908.json",
+      "bytes": 16477,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/results/prefill_occupancy.json"
+      ],
+      "format": "json"
+    },
+    "2b2c90509177df9b67013779903beae879cac9747a8c8e11ba6e1245f9ec62a9": {
+      "member": "2b2c90509177df9b67013779903beae879cac9747a8c8e11ba6e1245f9ec62a9.json",
+      "bytes": 368,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_83_result.json"
+      ],
+      "format": "json"
+    },
+    "2d832a6d99520b352d0e5e3ea215b8efa68e16caf428c4785efc25be760a5097": {
+      "member": "2d832a6d99520b352d0e5e3ea215b8efa68e16caf428c4785efc25be760a5097.json",
+      "bytes": 879,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_304_result.json"
+      ],
+      "format": "json"
+    },
+    "304e4010db33b4b964e741cdf6cabf8567e7baa83ed0c782ef57ab1b12d32929": {
+      "member": "304e4010db33b4b964e741cdf6cabf8567e7baa83ed0c782ef57ab1b12d32929.json",
+      "bytes": 997,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_265_result.json"
+      ],
+      "format": "json"
+    },
+    "30c0b6f0f41a300024994e74eaa38e46932d4d92ede2485fbd91b339aecdf371": {
+      "member": "30c0b6f0f41a300024994e74eaa38e46932d4d92ede2485fbd91b339aecdf371.json",
+      "bytes": 22298,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/results/decode_d64.json"
+      ],
+      "format": "json"
+    },
+    "31a0e82a81128ba2bd0a64848e5bf1faf5be4548fd734d97d22ad3e167d49d09": {
+      "member": "31a0e82a81128ba2bd0a64848e5bf1faf5be4548fd734d97d22ad3e167d49d09.json",
+      "bytes": 985,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_199_result.json"
+      ],
+      "format": "json"
+    },
+    "320d2fc6c5c397b4c37e5f6390699de70b5d07906626e3a9bd67859ff5663e79": {
+      "member": "320d2fc6c5c397b4c37e5f6390699de70b5d07906626e3a9bd67859ff5663e79.json",
+      "bytes": 553,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_226_result.json"
+      ],
+      "format": "json"
+    },
+    "323a8d89bb67387789fd47fa24e54fe73b8ba2bae74b1f08f4fd89e2e7a01feb": {
+      "member": "323a8d89bb67387789fd47fa24e54fe73b8ba2bae74b1f08f4fd89e2e7a01feb.json",
+      "bytes": 43474,
+      "original_records": [
+        "auto-pilot-kernel-h200/gpt6_20260905/results/g6_01_graph_screen.json"
+      ],
+      "format": "json"
+    },
+    "347fa4a36b8fb4667486616e768f19fd9e473251e7a6111075f23fc2e0405974": {
+      "member": "347fa4a36b8fb4667486616e768f19fd9e473251e7a6111075f23fc2e0405974.json",
+      "bytes": 641,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_110_result.json"
+      ],
+      "format": "json"
+    },
+    "348977b55417f1277041aae0fe086c7ea972cadb7851ef6353939d5ed262d889": {
+      "member": "348977b55417f1277041aae0fe086c7ea972cadb7851ef6353939d5ed262d889.json",
+      "bytes": 3664,
+      "original_records": [
+        "auto-pilot-kernel-a100/gpt6_20260906/results/a02.json"
+      ],
+      "format": "json"
+    },
+    "35b534b32ea5c572bfca370d4a368fbfc1b6c55426b1c5ecc8dce023c4d40b62": {
+      "member": "35b534b32ea5c572bfca370d4a368fbfc1b6c55426b1c5ecc8dce023c4d40b62.json",
+      "bytes": 585,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_213_result.json"
+      ],
+      "format": "json"
+    },
+    "35bf10634149c8036f8460bedc43b9e6ec6b1352bd1573395ec7815d041b6b7c": {
+      "member": "35bf10634149c8036f8460bedc43b9e6ec6b1352bd1573395ec7815d041b6b7c.json",
+      "bytes": 68842,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/results/decode_screen2.json"
+      ],
+      "format": "json"
+    },
+    "362c0530be47c32c3a9661bfe3942ef2a392259d876368aa7df7e48abcfa6793": {
+      "member": "362c0530be47c32c3a9661bfe3942ef2a392259d876368aa7df7e48abcfa6793.json",
+      "bytes": 683,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_194_result.json"
+      ],
+      "format": "json"
+    },
+    "36b4d05003e7daacfad2ba60b64450a67b78ee0a0f050e2e204e83d79e07b042": {
+      "member": "36b4d05003e7daacfad2ba60b64450a67b78ee0a0f050e2e204e83d79e07b042.json",
+      "bytes": 31964,
+      "original_records": [
+        "auto-pilot-kernel-h200/gpt6_20260905/results/g6_04.json"
+      ],
+      "format": "json"
+    },
+    "37d31f060d35200416d3876846d448ef4f6f51021924e265f4a0cecac571b44d": {
+      "member": "37d31f060d35200416d3876846d448ef4f6f51021924e265f4a0cecac571b44d.json",
+      "bytes": 773922,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/kb_no_detailed_evidence/service/evaluation-004/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "3832e4de4bb0366d9d0374a2a2a0d2ae5b7a01b3cc25fb2ef42da29c0db4ad30": {
+      "member": "3832e4de4bb0366d9d0374a2a2a0d2ae5b7a01b3cc25fb2ef42da29c0db4ad30.json",
+      "bytes": 641,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_293_result.json"
+      ],
+      "format": "json"
+    },
+    "3a0bd602225ca21590c156ec0589ee61260d9c2775acb1eb08310627c49fbd12": {
+      "member": "3a0bd602225ca21590c156ec0589ee61260d9c2775acb1eb08310627c49fbd12.json",
+      "bytes": 994,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_264_result.json"
+      ],
+      "format": "json"
+    },
+    "3a0e52fb2b638f9825fd79000c81ecb9d1cd03259c550254146d587d7d5edf35": {
+      "member": "3a0e52fb2b638f9825fd79000c81ecb9d1cd03259c550254146d587d7d5edf35.json",
+      "bytes": 773914,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/kb_no_detailed_evidence/service/evaluation-003/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "3ef68b887295ea361d1ea0e4b30e1fc01ba874fe736c393c4eb7ff882833a525": {
+      "member": "3ef68b887295ea361d1ea0e4b30e1fc01ba874fe736c393c4eb7ff882833a525.json",
+      "bytes": 3403,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_132_result.json"
+      ],
+      "format": "json"
+    },
+    "3f87e87ff0468ac72f6c4a3c25bca199c489db35ada519340899532735ab7aa4": {
+      "member": "3f87e87ff0468ac72f6c4a3c25bca199c489db35ada519340899532735ab7aa4.json",
+      "bytes": 3894,
+      "original_records": [
+        "auto-pilot-kernel-a100/gpt6_20260906/results/attention_batch_selected.json"
+      ],
+      "format": "json"
+    },
+    "3fac812025acabb6b6890715e13c5f0711d43b3dfe618360eee8f0d314ca123b": {
+      "member": "3fac812025acabb6b6890715e13c5f0711d43b3dfe618360eee8f0d314ca123b.json",
+      "bytes": 162674,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_opt_round2/results/attention_final_paired.json"
+      ],
+      "format": "json"
+    },
+    "4022ea170fa1017a58ef62cd84051751f3cc8b98adf2a46036132e459bb3b7ad": {
+      "member": "4022ea170fa1017a58ef62cd84051751f3cc8b98adf2a46036132e459bb3b7ad.json",
+      "bytes": 568,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_209_result.json"
+      ],
+      "format": "json"
+    },
+    "408bafc8889e63a6fc4515d922013c5854795bf16c9a520e74ad6b88cf3e3de6": {
+      "member": "408bafc8889e63a6fc4515d922013c5854795bf16c9a520e74ad6b88cf3e3de6.json",
+      "bytes": 17114,
+      "original_records": [
+        "auto-pilot-kernel-a100/gpt6_20260906/results/a08_short.json"
+      ],
+      "format": "json"
+    },
+    "40e0aad9f66367f7b52ffd89d17626321dfd0d860fbd20a58f105d2e332e5c12": {
+      "member": "40e0aad9f66367f7b52ffd89d17626321dfd0d860fbd20a58f105d2e332e5c12.json",
+      "bytes": 403,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/iteration_24_result.json"
+      ],
+      "format": "json"
+    },
+    "42799fd6246332a8b54c9a6635b178568e704041bfb1420c1ca7b6437cb45147": {
+      "member": "42799fd6246332a8b54c9a6635b178568e704041bfb1420c1ca7b6437cb45147.json",
+      "bytes": 22742,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/results/decode_fixed.json"
+      ],
+      "format": "json"
+    },
+    "43f7f5c6178d99454b7d74cb6b2cbaa12c26eeca48a4f93d931dad0924e68bfb": {
+      "member": "43f7f5c6178d99454b7d74cb6b2cbaa12c26eeca48a4f93d931dad0924e68bfb.json",
+      "bytes": 742,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_283_result.json"
+      ],
+      "format": "json"
+    },
+    "460a940b80cc5546a07103a7629e6d8f26a0ef64f432926c51ae61ef43e7b9ee": {
+      "member": "460a940b80cc5546a07103a7629e6d8f26a0ef64f432926c51ae61ef43e7b9ee.json",
+      "bytes": 51924,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/results/decode_convergence.json"
+      ],
+      "format": "json"
+    },
+    "46a98fceddbc9facb3f9e1a4746a4c3d82cfe9b0669792eba9491403f3e113ab": {
+      "member": "46a98fceddbc9facb3f9e1a4746a4c3d82cfe9b0669792eba9491403f3e113ab.json",
+      "bytes": 575345,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/kb_full/service/evaluation-001/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "4792720991c4fb7c85b04f4c50e082728f1235936c072d89406e63d02faeb605": {
+      "member": "4792720991c4fb7c85b04f4c50e082728f1235936c072d89406e63d02faeb605.json",
+      "bytes": 536,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_202_result.json"
+      ],
+      "format": "json"
+    },
+    "49282bb662f939f3cca367ce71011052b2af1135101b124c4805833308233cbf": {
+      "member": "49282bb662f939f3cca367ce71011052b2af1135101b124c4805833308233cbf.json",
+      "bytes": 2345,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_239_result.json"
+      ],
+      "format": "json"
+    },
+    "4936d76e799d4eb73560c4e41f9b35d5e5989a44566202f4c4d8816993ade9b5": {
+      "member": "4936d76e799d4eb73560c4e41f9b35d5e5989a44566202f4c4d8816993ade9b5.json",
+      "bytes": 575154,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/kb_no_history/service/evaluation-001/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "49c1f896b754e6d12efb11a6f93c59443d9f53ae4a45986980ec1ea86330f2b4": {
+      "member": "49c1f896b754e6d12efb11a6f93c59443d9f53ae4a45986980ec1ea86330f2b4.json",
+      "bytes": 587,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_210_result.json"
+      ],
+      "format": "json"
+    },
+    "4b93735f5f4c77ebd6e689dc5a5796566b50910b6ceaac68670af0c5e50106e4": {
+      "member": "4b93735f5f4c77ebd6e689dc5a5796566b50910b6ceaac68670af0c5e50106e4.json",
+      "bytes": 557,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_282_result.json"
+      ],
+      "format": "json"
+    },
+    "4dbd0925f09310d7d14e3b74350bed2b5bb9fffb82d53413d34f60f562c694d1": {
+      "member": "4dbd0925f09310d7d14e3b74350bed2b5bb9fffb82d53413d34f60f562c694d1.json",
+      "bytes": 772632,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/openevolve/service/evaluation-003/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "4f4248036d03f0c464514b9a632d3c61da08ce4f242e511364c01e92b65d2626": {
+      "member": "4f4248036d03f0c464514b9a632d3c61da08ce4f242e511364c01e92b65d2626.json",
+      "bytes": 1002,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_248_result.json"
+      ],
+      "format": "json"
+    },
+    "4f770b5cffec764ed7e7d785ddbe421d772030022a05512c817e7e53c866c0b7": {
+      "member": "4f770b5cffec764ed7e7d785ddbe421d772030022a05512c817e7e53c866c0b7.json",
+      "bytes": 14867,
+      "original_records": [
+        "auto-pilot-kernel-h200/gpt6_20260905/results/g6_10.json"
+      ],
+      "format": "json"
+    },
+    "5534a033ede90c25846a6512ed2ea32500705508185a81d844099f1719d4ae2b": {
+      "member": "5534a033ede90c25846a6512ed2ea32500705508185a81d844099f1719d4ae2b.json",
+      "bytes": 731,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_243_result.json"
+      ],
+      "format": "json"
+    },
+    "5634590ebf46294b0c1ad33680ed8f64ac33ec8ce542911cc65e8cbf4d05dbad": {
+      "member": "5634590ebf46294b0c1ad33680ed8f64ac33ec8ce542911cc65e8cbf4d05dbad.txt",
+      "bytes": 338911,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/references/CODEX_OPTIMIZATION_LOG.md"
+      ],
+      "format": "text"
+    },
+    "583b8fdca86ec948f9930d81a92eb1a3bbf484c209428b66a97f6fcedd4f99f7": {
+      "member": "583b8fdca86ec948f9930d81a92eb1a3bbf484c209428b66a97f6fcedd4f99f7.json",
+      "bytes": 773936,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/kb_no_detailed_evidence/service/evaluation-002/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "5938d71a242dec22972a55eabdbf43c02d547f4309153a4a18fe390d6a020259": {
+      "member": "5938d71a242dec22972a55eabdbf43c02d547f4309153a4a18fe390d6a020259.json",
+      "bytes": 933,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_273_result.json"
+      ],
+      "format": "json"
+    },
+    "5a224fb39f4cefc24046df61348eae357de79f7b8deb132927258753c50c3d66": {
+      "member": "5a224fb39f4cefc24046df61348eae357de79f7b8deb132927258753c50c3d66.json",
+      "bytes": 477,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_95_result.json"
+      ],
+      "format": "json"
+    },
+    "5a7d1783f19f15e7335715458aa565b64c26896e14ead30b72967bfa7785a799": {
+      "member": "5a7d1783f19f15e7335715458aa565b64c26896e14ead30b72967bfa7785a799.json",
+      "bytes": 485,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/iteration_28_result.json"
+      ],
+      "format": "json"
+    },
+    "5b3df6acf798945ef3bbd97126f36679f9693b762c0454c633cea9fa97dc4c84": {
+      "member": "5b3df6acf798945ef3bbd97126f36679f9693b762c0454c633cea9fa97dc4c84.json",
+      "bytes": 611,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_216_result.json"
+      ],
+      "format": "json"
+    },
+    "5d13f243a1404639816ffd07aff245aaa57dfe15b193f2a8207daefc5f6b5681": {
+      "member": "5d13f243a1404639816ffd07aff245aaa57dfe15b193f2a8207daefc5f6b5681.json",
+      "bytes": 1361,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_308_result.json"
+      ],
+      "format": "json"
+    },
+    "5dede4fbe57b6d30f8fc814f2584d2a8492df2d11f888ee00435a3eaba243e50": {
+      "member": "5dede4fbe57b6d30f8fc814f2584d2a8492df2d11f888ee00435a3eaba243e50.json",
+      "bytes": 643,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_116_result.json"
+      ],
+      "format": "json"
+    },
+    "61c026d3dfd46b32f02084ff4ff90eaeea6e11ba1aba8be1bbd9b31850fd9b60": {
+      "member": "61c026d3dfd46b32f02084ff4ff90eaeea6e11ba1aba8be1bbd9b31850fd9b60.json",
+      "bytes": 1134,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_166_result.json"
+      ],
+      "format": "json"
+    },
+    "6230e06025f2b95a4e1efa968f4823c9a66cb8430f96b8b105dda2666b07f8b5": {
+      "member": "6230e06025f2b95a4e1efa968f4823c9a66cb8430f96b8b105dda2666b07f8b5.json",
+      "bytes": 775,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_284_result.json"
+      ],
+      "format": "json"
+    },
+    "63025c69785f54577d91dc971fbd76480327412c6d2ce0d28f906dbb92334f10": {
+      "member": "63025c69785f54577d91dc971fbd76480327412c6d2ce0d28f906dbb92334f10.json",
+      "bytes": 773917,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/kb_full/service/evaluation-002/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "64475271d47526dea24cddd39536389d848c600a2a5c976ddb0c99261bdab477": {
+      "member": "64475271d47526dea24cddd39536389d848c600a2a5c976ddb0c99261bdab477.json",
+      "bytes": 575228,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/kb_no_lineage/service/evaluation-001/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "6478e07fd6171984b6b5d0027533f717a2518f2093a0c1659602ec6e3552ecf1": {
+      "member": "6478e07fd6171984b6b5d0027533f717a2518f2093a0c1659602ec6e3552ecf1.json",
+      "bytes": 540,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_274_result.json"
+      ],
+      "format": "json"
+    },
+    "65b101f52b6eba735bd47a704ff4dd43a67f3a6071964b850473517efd0f5db2": {
+      "member": "65b101f52b6eba735bd47a704ff4dd43a67f3a6071964b850473517efd0f5db2.json",
+      "bytes": 16430,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/results/prefill_screen1.json"
+      ],
+      "format": "json"
+    },
+    "66c5c4cca4fb2dcd001c62e3bd7126e1434bb1690cd1bba60102e6e44c3e41f0": {
+      "member": "66c5c4cca4fb2dcd001c62e3bd7126e1434bb1690cd1bba60102e6e44c3e41f0.json",
+      "bytes": 808,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_302_result.json"
+      ],
+      "format": "json"
+    },
+    "66f78dab5f6a2ac92eb4fe440248d5338b34e7a7a5c565110100e93bb59509b8": {
+      "member": "66f78dab5f6a2ac92eb4fe440248d5338b34e7a7a5c565110100e93bb59509b8.json",
+      "bytes": 1748,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_186_result.json"
+      ],
+      "format": "json"
+    },
+    "67ad4c1e4fdbe4b0d4bd9e7e4a347b2376e27da50da2bdc9667bf0059f2de1f3": {
+      "member": "67ad4c1e4fdbe4b0d4bd9e7e4a347b2376e27da50da2bdc9667bf0059f2de1f3.json",
+      "bytes": 62063,
+      "original_records": [
+        "auto-pilot-kernel-h200/gpt6_20260905/results/g6_06_screen.json"
+      ],
+      "format": "json"
+    },
+    "67b51c828220524a8641df54a3f720be5472aba0ea91946a21a3973adb4f029f": {
+      "member": "67b51c828220524a8641df54a3f720be5472aba0ea91946a21a3973adb4f029f.json",
+      "bytes": 2397,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_126_result.json"
+      ],
+      "format": "json"
+    },
+    "67c3d730d00c9a6c9dac438c0ff00b67e23a828f41b8468216b78f5f712a6235": {
+      "member": "67c3d730d00c9a6c9dac438c0ff00b67e23a828f41b8468216b78f5f712a6235.json",
+      "bytes": 517,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_197_result.json"
+      ],
+      "format": "json"
+    },
+    "6990b9d113414ab2029b650751cd1c1465ac120e2d9744f208bcf0962ce90fda": {
+      "member": "6990b9d113414ab2029b650751cd1c1465ac120e2d9744f208bcf0962ce90fda.json",
+      "bytes": 763,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_296_result.json"
+      ],
+      "format": "json"
+    },
+    "6ab899e6911a1618dc6e7a18b4e5f7022164a923e5b1a2f0e5e5ad429f096eb2": {
+      "member": "6ab899e6911a1618dc6e7a18b4e5f7022164a923e5b1a2f0e5e5ad429f096eb2.json",
+      "bytes": 1830,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_212_result.json"
+      ],
+      "format": "json"
+    },
+    "6c5cf9f11544f69a1b9dc9a4056e8ae8e1e859fb7bada9428e21b70b66e199a1": {
+      "member": "6c5cf9f11544f69a1b9dc9a4056e8ae8e1e859fb7bada9428e21b70b66e199a1.json",
+      "bytes": 1386,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_254_result.json"
+      ],
+      "format": "json"
+    },
+    "6c72c23213b58987c5e6e1f00b074388001693e6d677926cf241373fd04d0ec0": {
+      "member": "6c72c23213b58987c5e6e1f00b074388001693e6d677926cf241373fd04d0ec0.json",
+      "bytes": 512,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_272_result.json"
+      ],
+      "format": "json"
+    },
+    "6d2c53e1204a4052749f21e0fb75c6c5627ee3cef09244d1eccc11ad515bfb08": {
+      "member": "6d2c53e1204a4052749f21e0fb75c6c5627ee3cef09244d1eccc11ad515bfb08.json",
+      "bytes": 1000,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_262_result.json"
+      ],
+      "format": "json"
+    },
+    "6e3aae19cb9cf46c91b673bbc5d5776f74c74f644837a1addfebc690a8c81204": {
+      "member": "6e3aae19cb9cf46c91b673bbc5d5776f74c74f644837a1addfebc690a8c81204.json",
+      "bytes": 1288,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/iteration_85_result.json"
+      ],
+      "format": "json"
+    },
+    "712bfb4d94b1cd4605c7ccf257f6e25b81f6341815e7c19299d892009106b7a6": {
+      "member": "712bfb4d94b1cd4605c7ccf257f6e25b81f6341815e7c19299d892009106b7a6.json",
+      "bytes": 529,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_271_result.json"
+      ],
+      "format": "json"
+    },
+    "712c676f4a726fce1d7475486edcb981389683e2fb146fae2f9cb655ef6ee7df": {
+      "member": "712c676f4a726fce1d7475486edcb981389683e2fb146fae2f9cb655ef6ee7df.json",
+      "bytes": 42573,
+      "original_records": [
+        "auto-pilot-kernel-h200/gpt6_20260905/results/g6_02_screen_isolated.json"
+      ],
+      "format": "json"
+    },
+    "71b12a95de671d4f2984775b0bbb1dcc96c1c035bef8a64af688f9f0e0881d86": {
+      "member": "71b12a95de671d4f2984775b0bbb1dcc96c1c035bef8a64af688f9f0e0881d86.json",
+      "bytes": 323,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/iteration_21_result.json"
+      ],
+      "format": "json"
+    },
+    "72fe25cf395928546f9ff06f5a30cf9a9a59ef43eb93f1639beda5631c131467": {
+      "member": "72fe25cf395928546f9ff06f5a30cf9a9a59ef43eb93f1639beda5631c131467.json",
+      "bytes": 1110,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_245_result.json"
+      ],
+      "format": "json"
+    },
+    "73ab8ee584d8ec1b29338932000069e52039791027bf3c089b9e41153f9a6278": {
+      "member": "73ab8ee584d8ec1b29338932000069e52039791027bf3c089b9e41153f9a6278.json",
+      "bytes": 697275,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/layer_profile_20260906/results/h20/operators/final_paired.json"
+      ],
+      "format": "json"
+    },
+    "75e2db932a584d23c93a71cc61fff4faf95047d5843979fc24d55d04d4e207c4": {
+      "member": "75e2db932a584d23c93a71cc61fff4faf95047d5843979fc24d55d04d4e207c4.json",
+      "bytes": 54592,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/results/decode_screen1.json"
+      ],
+      "format": "json"
+    },
+    "771ef4594d869f1ffacadeec5493d09cb5b8e936dfbb21e00cf5443d8ced24f8": {
+      "member": "771ef4594d869f1ffacadeec5493d09cb5b8e936dfbb21e00cf5443d8ced24f8.json",
+      "bytes": 2519,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_130_result.json"
+      ],
+      "format": "json"
+    },
+    "775a3466400319a2196bc047d1c02998d0eac5e435b5d78d1928252dd8745218": {
+      "member": "775a3466400319a2196bc047d1c02998d0eac5e435b5d78d1928252dd8745218.json",
+      "bytes": 637,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_292_result.json"
+      ],
+      "format": "json"
+    },
+    "78d967fa593c88caaae0ae43c2961e0190041547bb33c8f2ceb053371fb4930d": {
+      "member": "78d967fa593c88caaae0ae43c2961e0190041547bb33c8f2ceb053371fb4930d.json",
+      "bytes": 711,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_207_result.json"
+      ],
+      "format": "json"
+    },
+    "7980cf6586379e0401744b937b3b05ccb365a1c81a01363bc0f77161bea21351": {
+      "member": "7980cf6586379e0401744b937b3b05ccb365a1c81a01363bc0f77161bea21351.json",
+      "bytes": 819,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_298_result.json"
+      ],
+      "format": "json"
+    },
+    "79b4e8cfafcebfac485a8cb7a32599f3c1af6ab103999ab31d5b9d99c30dc341": {
+      "member": "79b4e8cfafcebfac485a8cb7a32599f3c1af6ab103999ab31d5b9d99c30dc341.json",
+      "bytes": 774047,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/kb_no_history/service/evaluation-004/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "7a41031f6cd63bd2e1e9bb7d7851a7abe32332d0a06390613dfce02cd24c25b6": {
+      "member": "7a41031f6cd63bd2e1e9bb7d7851a7abe32332d0a06390613dfce02cd24c25b6.json",
+      "bytes": 919,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_258_result.json"
+      ],
+      "format": "json"
+    },
+    "7b6b188acb95fab1f4c32792ad8be6373a5c521c08b33397f1f4e52a882a0ce7": {
+      "member": "7b6b188acb95fab1f4c32792ad8be6373a5c521c08b33397f1f4e52a882a0ce7.json",
+      "bytes": 489,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_204_result.json"
+      ],
+      "format": "json"
+    },
+    "7c28ea256d566e781e1c55d6a3b4033c4f4cb51faf0171c2662395c2c1213c41": {
+      "member": "7c28ea256d566e781e1c55d6a3b4033c4f4cb51faf0171c2662395c2c1213c41.json",
+      "bytes": 45223,
+      "original_records": [
+        "auto-pilot-kernel-a100/gpt6_20260906/results/a01_decode.json"
+      ],
+      "format": "json"
+    },
+    "7c5f968cfbe20d7519a88f2ef1010b36b851012f8502cd45d266e7e4b384a7a2": {
+      "member": "7c5f968cfbe20d7519a88f2ef1010b36b851012f8502cd45d266e7e4b384a7a2.json",
+      "bytes": 508,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_193_result.json"
+      ],
+      "format": "json"
+    },
+    "7cf657f09486a36a3ba16c0edcd12d88faa228593ebf163f3891975c1c560b36": {
+      "member": "7cf657f09486a36a3ba16c0edcd12d88faa228593ebf163f3891975c1c560b36.json",
+      "bytes": 742,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_117_result.json"
+      ],
+      "format": "json"
+    },
+    "7d8530157de00edfde37d28891b92c77ed51370237b6d85dae34bfe6cddc4a00": {
+      "member": "7d8530157de00edfde37d28891b92c77ed51370237b6d85dae34bfe6cddc4a00.json",
+      "bytes": 512,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_203_result.json"
+      ],
+      "format": "json"
+    },
+    "7ea44799d39ffa1f29d425e06ebbdb92a019829eaa6b26296452f7d288faef3e": {
+      "member": "7ea44799d39ffa1f29d425e06ebbdb92a019829eaa6b26296452f7d288faef3e.json",
+      "bytes": 17152,
+      "original_records": [
+        "auto-pilot-kernel-a100/gpt6_20260906/results/a09_short.json"
+      ],
+      "format": "json"
+    },
+    "7ef4d6c0d5c6381d30ffb430b6d6fc4910b598fdb286b6e1c5465d02b1f96a68": {
+      "member": "7ef4d6c0d5c6381d30ffb430b6d6fc4910b598fdb286b6e1c5465d02b1f96a68.json",
+      "bytes": 12081,
+      "original_records": [
+        "auto-pilot-kernel-a100/gpt6_20260906/results/a07_short.json"
+      ],
+      "format": "json"
+    },
+    "80afff8ff09553a03342f9d5d188c23b8cf3dac1dd17d854a2a8c2b81d60c31c": {
+      "member": "80afff8ff09553a03342f9d5d188c23b8cf3dac1dd17d854a2a8c2b81d60c31c.json",
+      "bytes": 774014,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/skydiscover_adaevolve/service/evaluation-003/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "812a0ac63cecbba620c73dcb9bb0d1fa7c154dfb738727b6484c3e2de861e529": {
+      "member": "812a0ac63cecbba620c73dcb9bb0d1fa7c154dfb738727b6484c3e2de861e529.json",
+      "bytes": 1170,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/iteration_80_result.json"
+      ],
+      "format": "json"
+    },
+    "81e2da0c7b094090dba3aa42987efb4684cbec3a1063345e44bad4937da4dedd": {
+      "member": "81e2da0c7b094090dba3aa42987efb4684cbec3a1063345e44bad4937da4dedd.json",
+      "bytes": 361,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_88_result.json"
+      ],
+      "format": "json"
+    },
+    "834e2e1dba4c9291b0dd126c3bf74081c109804ca21badbf3aa9422393609da5": {
+      "member": "834e2e1dba4c9291b0dd126c3bf74081c109804ca21badbf3aa9422393609da5.json",
+      "bytes": 859,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_221_result.json"
+      ],
+      "format": "json"
+    },
+    "838cecc60796da7679242549be95a0d1c7d84892ce43ed5c7b95bf63fa317c25": {
+      "member": "838cecc60796da7679242549be95a0d1c7d84892ce43ed5c7b95bf63fa317c25.json",
+      "bytes": 141741,
+      "original_records": [
+        "auto-pilot-kernel-h200/gpt6_20260905/results/baseline_decode_tuned.json"
+      ],
+      "format": "json"
+    },
+    "847ced6945369eea560df743d37597a946bffabef0e64ef86ed6b0c689f01a14": {
+      "member": "847ced6945369eea560df743d37597a946bffabef0e64ef86ed6b0c689f01a14.json",
+      "bytes": 727,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_198_result.json"
+      ],
+      "format": "json"
+    },
+    "8555a42c7bbc39911eaa173647ba2cc03ad938085bfb643836c31899701fbada": {
+      "member": "8555a42c7bbc39911eaa173647ba2cc03ad938085bfb643836c31899701fbada.json",
+      "bytes": 29484,
+      "original_records": [
+        "auto-pilot-kernel-a100/gpt6_20260906/results/canonical_prefill_screen.json"
+      ],
+      "format": "json"
+    },
+    "875b7d99e95e16e55212a97a76714404281dcee71dcc69229272f67af8c874a6": {
+      "member": "875b7d99e95e16e55212a97a76714404281dcee71dcc69229272f67af8c874a6.json",
+      "bytes": 10982,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/results/final_raw_validation.json",
+        "auto-pilot-kernel-h200/gpt6_20260905/results/attention_raw_final.json",
+        "auto-pilot-kernel-a100/gpt6_20260906/results/attention_raw_selected.json"
+      ],
+      "format": "json"
+    },
+    "8949e1add57f035c8ae351b8376108907d76b0d26698673ac61b3e357dfeb4ba": {
+      "member": "8949e1add57f035c8ae351b8376108907d76b0d26698673ac61b3e357dfeb4ba.json",
+      "bytes": 936,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/iteration_96_result.json"
+      ],
+      "format": "json"
+    },
+    "89a96e400a961da68ece4b864a7f9d6a598e27ab9c18b167b9977e01ca3d3b82": {
+      "member": "89a96e400a961da68ece4b864a7f9d6a598e27ab9c18b167b9977e01ca3d3b82.json",
+      "bytes": 733,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_244_result.json"
+      ],
+      "format": "json"
+    },
+    "89ed41563a1fa16fdb882bfcfca9469ab6bda8251148c99a9fcc4f62a9090315": {
+      "member": "89ed41563a1fa16fdb882bfcfca9469ab6bda8251148c99a9fcc4f62a9090315.json",
+      "bytes": 478,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_277_result.json"
+      ],
+      "format": "json"
+    },
+    "8a1be72f4edcc5aa3ba9334a0e2267f9486abff8ee756e3e373518d251468e0b": {
+      "member": "8a1be72f4edcc5aa3ba9334a0e2267f9486abff8ee756e3e373518d251468e0b.json",
+      "bytes": 916,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_263_result.json"
+      ],
+      "format": "json"
+    },
+    "8c258b79e6a0f7b410a2ae44e67c6264783c12c4c5cdfc9a1c42c9e2d64cdeaa": {
+      "member": "8c258b79e6a0f7b410a2ae44e67c6264783c12c4c5cdfc9a1c42c9e2d64cdeaa.json",
+      "bytes": 1292,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/iteration_83_result.json"
+      ],
+      "format": "json"
+    },
+    "8cbfd17c8e14f2e80d14449e8269158cacaad327f922d49fe41510ffe919b8aa": {
+      "member": "8cbfd17c8e14f2e80d14449e8269158cacaad327f922d49fe41510ffe919b8aa.json",
+      "bytes": 16432,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/results/prefill_geometry.json"
+      ],
+      "format": "json"
+    },
+    "8dc26fbae73d59bf56f045983f3ecc86de1a8408ca60ae0507cb0f9f3352a12b": {
+      "member": "8dc26fbae73d59bf56f045983f3ecc86de1a8408ca60ae0507cb0f9f3352a12b.json",
+      "bytes": 718,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_286_result.json"
+      ],
+      "format": "json"
+    },
+    "8e8707a4bb2fe43c4c11a4ebe3715266efaa95c6a40368a639d969b3a8650206": {
+      "member": "8e8707a4bb2fe43c4c11a4ebe3715266efaa95c6a40368a639d969b3a8650206.json",
+      "bytes": 698,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_288_result.json"
+      ],
+      "format": "json"
+    },
+    "8ebeaa0c0dd6322e2f3f05c67816a7f7eeba61a37bb50063e6ff6ca650bedfc6": {
+      "member": "8ebeaa0c0dd6322e2f3f05c67816a7f7eeba61a37bb50063e6ff6ca650bedfc6.json",
+      "bytes": 2337,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_128_result.json"
+      ],
+      "format": "json"
+    },
+    "8f233637e0d41640e7539787e650cf5925b8fe51f3e0e7b5b06190ae3ab080ee": {
+      "member": "8f233637e0d41640e7539787e650cf5925b8fe51f3e0e7b5b06190ae3ab080ee.json",
+      "bytes": 738,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_107_result.json"
+      ],
+      "format": "json"
+    },
+    "901210a1603af1e3d7b06e6f52a38ca1573d19ef66781f359957baaf83118a76": {
+      "member": "901210a1603af1e3d7b06e6f52a38ca1573d19ef66781f359957baaf83118a76.json",
+      "bytes": 577,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_98_result.json"
+      ],
+      "format": "json"
+    },
+    "91508f55cf8b74e3205dab279fe5c9985b4e925e4fd60ac1dd06ae8f0bbf1b39": {
+      "member": "91508f55cf8b74e3205dab279fe5c9985b4e925e4fd60ac1dd06ae8f0bbf1b39.json",
+      "bytes": 493,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_108_result.json"
+      ],
+      "format": "json"
+    },
+    "931d49ef772144642621aa45e05ad37f92fea9319e89cb70819471208b4bdc31": {
+      "member": "931d49ef772144642621aa45e05ad37f92fea9319e89cb70819471208b4bdc31.json",
+      "bytes": 575322,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/kb_no_numerical_requirements/service/evaluation-001/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "95aceda0e5425e097f364ffb66824d5cfe45e833d9d2bdf0a1c17cd48306ee62": {
+      "member": "95aceda0e5425e097f364ffb66824d5cfe45e833d9d2bdf0a1c17cd48306ee62.json",
+      "bytes": 679,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_247_result.json"
+      ],
+      "format": "json"
+    },
+    "982917c0c1ea8398cc26f1cca4050e3274fe0556f622bf9a0d4e44805461ec25": {
+      "member": "982917c0c1ea8398cc26f1cca4050e3274fe0556f622bf9a0d4e44805461ec25.json",
+      "bytes": 575522,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/kb_no_detailed_evidence/service/evaluation-001/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "989305e3ccfb709de9332f7ad8d253dcead4787367bd7d09a46616360ec6b531": {
+      "member": "989305e3ccfb709de9332f7ad8d253dcead4787367bd7d09a46616360ec6b531.json",
+      "bytes": 624,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_214_result.json"
+      ],
+      "format": "json"
+    },
+    "99bb92e9794db50306c54736607ae5d017093cfd52a0714586720f51f0ae0282": {
+      "member": "99bb92e9794db50306c54736607ae5d017093cfd52a0714586720f51f0ae0282.json",
+      "bytes": 1053,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/iteration_95_result.json"
+      ],
+      "format": "json"
+    },
+    "99ecd5f7a31ea03768dc92d307262fa20b521e218918d68694530eb562915b38": {
+      "member": "99ecd5f7a31ea03768dc92d307262fa20b521e218918d68694530eb562915b38.json",
+      "bytes": 601,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_217_result.json"
+      ],
+      "format": "json"
+    },
+    "9aa8eea6ea8a80234afd83873eb4f6ffd778bfdc9c28215f90a05846246be880": {
+      "member": "9aa8eea6ea8a80234afd83873eb4f6ffd778bfdc9c28215f90a05846246be880.json",
+      "bytes": 643,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_294_result.json"
+      ],
+      "format": "json"
+    },
+    "9dd01fbe71e3acb8c4570edc4394b9612e5218efce80a9b3a75d94a5c3cc4bac": {
+      "member": "9dd01fbe71e3acb8c4570edc4394b9612e5218efce80a9b3a75d94a5c3cc4bac.json",
+      "bytes": 4241,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_243_result.json"
+      ],
+      "format": "json"
+    },
+    "9e033b930937830c766d1262623d8be8454de873c77d5a361a5153d5a900ebd7": {
+      "member": "9e033b930937830c766d1262623d8be8454de873c77d5a361a5153d5a900ebd7.json",
+      "bytes": 650,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_231_result.json"
+      ],
+      "format": "json"
+    },
+    "9fa0c955aecafb55cc63bb18686acb3aaa06a18d374d8526a1586cc8366e909e": {
+      "member": "9fa0c955aecafb55cc63bb18686acb3aaa06a18d374d8526a1586cc8366e909e.json",
+      "bytes": 1660,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_185_result.json"
+      ],
+      "format": "json"
+    },
+    "a2392a255f91f78d301b44709f71759dab4caf0849332c4ee2f777b09fc6e862": {
+      "member": "a2392a255f91f78d301b44709f71759dab4caf0849332c4ee2f777b09fc6e862.json",
+      "bytes": 1336,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/iteration_84_result.json"
+      ],
+      "format": "json"
+    },
+    "a4af1f91deea304bbf7dbffb50082706c7999379bee940fc477f26c311e4d752": {
+      "member": "a4af1f91deea304bbf7dbffb50082706c7999379bee940fc477f26c311e4d752.json",
+      "bytes": 575323,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/kb_no_opportunities/service/evaluation-001/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "a5f512062d8d6644179651030c1e558621c81c99cadbab85fb7f74c6346e1469": {
+      "member": "a5f512062d8d6644179651030c1e558621c81c99cadbab85fb7f74c6346e1469.json",
+      "bytes": 42836,
+      "original_records": [
+        "auto-pilot-kernel-h200/gpt6_20260905/results/g6_01_screen.json"
+      ],
+      "format": "json"
+    },
+    "a5f56e74ef82e2c441443bac5bdea834291bac2fa4d98fe1179f08f5a8ae7dbf": {
+      "member": "a5f56e74ef82e2c441443bac5bdea834291bac2fa4d98fe1179f08f5a8ae7dbf.json",
+      "bytes": 513,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_237_result.json"
+      ],
+      "format": "json"
+    },
+    "a6893734a5568d00faccd4091be9f5931844f88785ecb4e31b9a04c632b8394f": {
+      "member": "a6893734a5568d00faccd4091be9f5931844f88785ecb4e31b9a04c632b8394f.txt",
+      "bytes": 19309,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/CODEX_OPTIMIZATION_LOG.md"
+      ],
+      "format": "text"
+    },
+    "a84b466a11f84190c656236ea584c6aeaa4de937012b6f0824e59b2397a74cd1": {
+      "member": "a84b466a11f84190c656236ea584c6aeaa4de937012b6f0824e59b2397a74cd1.json",
+      "bytes": 787,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_295_result.json"
+      ],
+      "format": "json"
+    },
+    "a8b1ab2780fa1a8fe00a4244226c60685d35dfc9f170cbbe133c5b1005e43f10": {
+      "member": "a8b1ab2780fa1a8fe00a4244226c60685d35dfc9f170cbbe133c5b1005e43f10.json",
+      "bytes": 988,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_229_result.json"
+      ],
+      "format": "json"
+    },
+    "a99deb4a43458429a2e5724ae7859aa89f1dfcc799103ed580ca089d2d0c45e1": {
+      "member": "a99deb4a43458429a2e5724ae7859aa89f1dfcc799103ed580ca089d2d0c45e1.json",
+      "bytes": 511,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_191_result.json"
+      ],
+      "format": "json"
+    },
+    "aa5b62b9b01e35651cdccea6cd7e9e3d54f63b4c6647dfbe6a11214eac0e1c0f": {
+      "member": "aa5b62b9b01e35651cdccea6cd7e9e3d54f63b4c6647dfbe6a11214eac0e1c0f.json",
+      "bytes": 773037,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/kb_no_numerical_requirements/service/evaluation-003/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "aafe52899b4e14776ac500ea1173d5022d856fd3fbae6ed335a58c3304aafc5a": {
+      "member": "aafe52899b4e14776ac500ea1173d5022d856fd3fbae6ed335a58c3304aafc5a.json",
+      "bytes": 688,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_268_result.json"
+      ],
+      "format": "json"
+    },
+    "ab8e928aa041ed1652a09d491078e4c463413c8c02994bc0ed020edfd01dc895": {
+      "member": "ab8e928aa041ed1652a09d491078e4c463413c8c02994bc0ed020edfd01dc895.json",
+      "bytes": 827,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_299_result.json"
+      ],
+      "format": "json"
+    },
+    "ac3cc5c0b48c797b95c3c7d04a61d0bf036c2c1556e0d72043c42c4be8107483": {
+      "member": "ac3cc5c0b48c797b95c3c7d04a61d0bf036c2c1556e0d72043c42c4be8107483.json",
+      "bytes": 575356,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/skydiscover_adaevolve/service/evaluation-001/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "ad1094214549a7c593831c10f7a64db2745e557ca8ac2bc7fb869eac81ca319d": {
+      "member": "ad1094214549a7c593831c10f7a64db2745e557ca8ac2bc7fb869eac81ca319d.json",
+      "bytes": 1074,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_256_result.json"
+      ],
+      "format": "json"
+    },
+    "ae202077d4ce5cb623d2a2c897e1c879285290c338bacd382e67a82d1e034a4b": {
+      "member": "ae202077d4ce5cb623d2a2c897e1c879285290c338bacd382e67a82d1e034a4b.txt",
+      "bytes": 4391,
+      "original_records": [
+        "auto-pilot-kernel-a100/gpt6_20260906/results/attention_partition_final.log"
+      ],
+      "format": "text"
+    },
+    "ae32707f8b4061881be9c5970eade13958652b7508dd372fcd3c1e8b8ce94d90": {
+      "member": "ae32707f8b4061881be9c5970eade13958652b7508dd372fcd3c1e8b8ce94d90.json",
+      "bytes": 587,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_290_result.json"
+      ],
+      "format": "json"
+    },
+    "af54b6560959d7f6db284a58fbc2e781d4ceeb9472edce3808a673d252a49437": {
+      "member": "af54b6560959d7f6db284a58fbc2e781d4ceeb9472edce3808a673d252a49437.json",
+      "bytes": 7315,
+      "original_records": [
+        "auto-pilot-kernel-a100/gpt6_20260906/results/attention_partition_selected.json"
+      ],
+      "format": "json"
+    },
+    "afcbe136e4873dec62c3d6a541fc5644fd33a30443fc28682cc6daea4835d16e": {
+      "member": "afcbe136e4873dec62c3d6a541fc5644fd33a30443fc28682cc6daea4835d16e.txt",
+      "bytes": 580,
+      "original_records": [
+        "auto-pilot-kernel-a100/gpt6_20260906/results/baseline_partition.log"
+      ],
+      "format": "text"
+    },
+    "aff42d2f2a38464b97401a917953b1c83fde635bf2cda841993e6edd5502f87a": {
+      "member": "aff42d2f2a38464b97401a917953b1c83fde635bf2cda841993e6edd5502f87a.json",
+      "bytes": 4626,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_241_result.json"
+      ],
+      "format": "json"
+    },
+    "b095686b9250324681f5487722d6a4db105044c29a1f336d46b348347cebc3ab": {
+      "member": "b095686b9250324681f5487722d6a4db105044c29a1f336d46b348347cebc3ab.json",
+      "bytes": 3421,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_135_result.json"
+      ],
+      "format": "json"
+    },
+    "b18256ca19b2c72f6d5310bdab9d972a0c8b4c8bc2bcf3d2636c531269cf6fbe": {
+      "member": "b18256ca19b2c72f6d5310bdab9d972a0c8b4c8bc2bcf3d2636c531269cf6fbe.json",
+      "bytes": 452,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/iteration_25_result.json"
+      ],
+      "format": "json"
+    },
+    "b28d415970440bac8dbffef2e51abd901fe85f011d6c1de8e0271101c0551c72": {
+      "member": "b28d415970440bac8dbffef2e51abd901fe85f011d6c1de8e0271101c0551c72.json",
+      "bytes": 509,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/iteration_27_result.json"
+      ],
+      "format": "json"
+    },
+    "b2c99c3248a127cf6ead1dc0b9f32746ca24146efe89660cf5b69486b98d284c": {
+      "member": "b2c99c3248a127cf6ead1dc0b9f32746ca24146efe89660cf5b69486b98d284c.json",
+      "bytes": 1462,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_307_result.json"
+      ],
+      "format": "json"
+    },
+    "b2edbd8d48d04404e9e7b51ef0be782f72c2bc37e772abc0216e2fc827347b2e": {
+      "member": "b2edbd8d48d04404e9e7b51ef0be782f72c2bc37e772abc0216e2fc827347b2e.json",
+      "bytes": 31987,
+      "original_records": [
+        "auto-pilot-kernel-h200/gpt6_20260905/results/g6_03.json"
+      ],
+      "format": "json"
+    },
+    "b3071bf6fbdd446976781edac12f647be0e9451a35554f2e0642f8393df71583": {
+      "member": "b3071bf6fbdd446976781edac12f647be0e9451a35554f2e0642f8393df71583.json",
+      "bytes": 119522,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/results/final_paired.json"
+      ],
+      "format": "json"
+    },
+    "b3d37385aeb9f281f7d589acb116a91834e57826990686103224d5e8ead1f80c": {
+      "member": "b3d37385aeb9f281f7d589acb116a91834e57826990686103224d5e8ead1f80c.txt",
+      "bytes": 11053,
+      "original_records": [
+        "auto-pilot-kernel-a100/gpt6_20260906/CODEX_OPTIMIZATION_LOG.md"
+      ],
+      "format": "text"
+    },
+    "b445173edec54c63478388c0f4af0e70f8f9cc17f8abd56409d7f8b98bff3104": {
+      "member": "b445173edec54c63478388c0f4af0e70f8f9cc17f8abd56409d7f8b98bff3104.json",
+      "bytes": 633,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_291_result.json"
+      ],
+      "format": "json"
+    },
+    "b4c68be424956e4c8e4543914fbd66548022af62e75621da176fb15905319c39": {
+      "member": "b4c68be424956e4c8e4543914fbd66548022af62e75621da176fb15905319c39.json",
+      "bytes": 346,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/iteration_23_result.json"
+      ],
+      "format": "json"
+    },
+    "b5494576a8ff5c662f2b064e451047403ca3fa3be0463bfc009031c1e63d81e8": {
+      "member": "b5494576a8ff5c662f2b064e451047403ca3fa3be0463bfc009031c1e63d81e8.json",
+      "bytes": 687,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_261_result.json"
+      ],
+      "format": "json"
+    },
+    "b6ca45bb47e2a8d38a5820c0a66e7e799deb54d6565bc5be43b1cf6da8e81a17": {
+      "member": "b6ca45bb47e2a8d38a5820c0a66e7e799deb54d6565bc5be43b1cf6da8e81a17.json",
+      "bytes": 12379,
+      "original_records": [
+        "auto-pilot-kernel-a100/gpt6_20260906/results/combined_short_confirm.json"
+      ],
+      "format": "json"
+    },
+    "b7785e5a9b94cb79d8fcdbdf394569612e7b78776777deade6af9f9becc74274": {
+      "member": "b7785e5a9b94cb79d8fcdbdf394569612e7b78776777deade6af9f9becc74274.json",
+      "bytes": 378,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_93_result.json"
+      ],
+      "format": "json"
+    },
+    "b8b8e52fe5c5a0db55395c59a55eefb307f3a5b85c45ce6803dcfa70a487ef2c": {
+      "member": "b8b8e52fe5c5a0db55395c59a55eefb307f3a5b85c45ce6803dcfa70a487ef2c.json",
+      "bytes": 1072,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_312_result.json"
+      ],
+      "format": "json"
+    },
+    "b8cbdf197a252985bec9751d22e3e3ca22098c61e668800ece4d7b1826063538": {
+      "member": "b8cbdf197a252985bec9751d22e3e3ca22098c61e668800ece4d7b1826063538.json",
+      "bytes": 407,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_276_result.json"
+      ],
+      "format": "json"
+    },
+    "b93282befbb9a4a05cbb3856fca9babb341328919e49f540c89ad8eda6f8c2fa": {
+      "member": "b93282befbb9a4a05cbb3856fca9babb341328919e49f540c89ad8eda6f8c2fa.json",
+      "bytes": 574283,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/openevolve/service/evaluation-001/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "b9e523c5f8c43d8333cf7c120777d2ec83b4e240a4c2aa373218d69895c9267a": {
+      "member": "b9e523c5f8c43d8333cf7c120777d2ec83b4e240a4c2aa373218d69895c9267a.json",
+      "bytes": 586,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_114_result.json"
+      ],
+      "format": "json"
+    },
+    "ba606d0361b37edc70099eb7af2a1fa992dd47b98e1bf4e5679c75ce7b71776f": {
+      "member": "ba606d0361b37edc70099eb7af2a1fa992dd47b98e1bf4e5679c75ce7b71776f.json",
+      "bytes": 1011,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_246_result.json"
+      ],
+      "format": "json"
+    },
+    "ba6216b2fa5e230ef2c4a436109d8e94d264143bd33ccc7628e4078e58e2f505": {
+      "member": "ba6216b2fa5e230ef2c4a436109d8e94d264143bd33ccc7628e4078e58e2f505.json",
+      "bytes": 1399,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_306_result.json"
+      ],
+      "format": "json"
+    },
+    "bada43ff60978e3d02f03a68b49dbc2001cf87764b2b5d56f6935fe19b5f9f77": {
+      "member": "bada43ff60978e3d02f03a68b49dbc2001cf87764b2b5d56f6935fe19b5f9f77.json",
+      "bytes": 798,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_211_result.json"
+      ],
+      "format": "json"
+    },
+    "bc0550e6830c4e3d79eba8bf8913ace7caf79712d14a9f28d977e8f9b8728ba6": {
+      "member": "bc0550e6830c4e3d79eba8bf8913ace7caf79712d14a9f28d977e8f9b8728ba6.json",
+      "bytes": 6495,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_237d_result.json"
+      ],
+      "format": "json"
+    },
+    "bd787cd86ad2d0b3b357476a5401cdb8dc11151bf94a4ef17f41197e93550b14": {
+      "member": "bd787cd86ad2d0b3b357476a5401cdb8dc11151bf94a4ef17f41197e93550b14.json",
+      "bytes": 1019,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_301_result.json"
+      ],
+      "format": "json"
+    },
+    "bd8cc6d6f8abbfed2d90b40a74e82c92776edc0a4dfc8933a7dd5bb8d2f8b168": {
+      "member": "bd8cc6d6f8abbfed2d90b40a74e82c92776edc0a4dfc8933a7dd5bb8d2f8b168.json",
+      "bytes": 985,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_313_result.json"
+      ],
+      "format": "json"
+    },
+    "c1e5345a5f5b765157bbf9c0a4b1411b827232b9affc12730424992b90dc1a33": {
+      "member": "c1e5345a5f5b765157bbf9c0a4b1411b827232b9affc12730424992b90dc1a33.json",
+      "bytes": 1108,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_233_result.json"
+      ],
+      "format": "json"
+    },
+    "c3738792ed151d63e38d91b21daae08afd7f0c72f4479ccd26ff2d1927239785": {
+      "member": "c3738792ed151d63e38d91b21daae08afd7f0c72f4479ccd26ff2d1927239785.json",
+      "bytes": 279,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/iteration_22_result.json"
+      ],
+      "format": "json"
+    },
+    "c39bcea599b3ab831275e6907e1af58e642f938f3fd88f18884bf2ed3dce9070": {
+      "member": "c39bcea599b3ab831275e6907e1af58e642f938f3fd88f18884bf2ed3dce9070.json",
+      "bytes": 4351,
+      "original_records": [
+        "auto-pilot-kernel-h200/gpt6_20260905/results/g6_08_screen.json"
+      ],
+      "format": "json"
+    },
+    "c469cdfb90fcd32224f63393af95cf45fc52a136f1683fefb95c7f62eb4c2eb7": {
+      "member": "c469cdfb90fcd32224f63393af95cf45fc52a136f1683fefb95c7f62eb4c2eb7.json",
+      "bytes": 1743,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_178_result.json"
+      ],
+      "format": "json"
+    },
+    "c749f2c316fcbcdafd4c0f4796ee67c4031f41ee544f723100a110eed1918c0d": {
+      "member": "c749f2c316fcbcdafd4c0f4796ee67c4031f41ee544f723100a110eed1918c0d.json",
+      "bytes": 679,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_121_result.json"
+      ],
+      "format": "json"
+    },
+    "c7ba667a46d442a007f1c779c5c60f01f88e869a98f4651f9fb0ea327cdbf5d9": {
+      "member": "c7ba667a46d442a007f1c779c5c60f01f88e869a98f4651f9fb0ea327cdbf5d9.json",
+      "bytes": 708,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_285_result.json"
+      ],
+      "format": "json"
+    },
+    "c7c239e5de0907efbbf4547a6bb1e7c97e77f014cac290a9419a518dc5da6668": {
+      "member": "c7c239e5de0907efbbf4547a6bb1e7c97e77f014cac290a9419a518dc5da6668.json",
+      "bytes": 511,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_232_result.json"
+      ],
+      "format": "json"
+    },
+    "c7e87ad091ecf83936f740569ca2f11d20a3d67f8b98f2933a6426e8d427e2a1": {
+      "member": "c7e87ad091ecf83936f740569ca2f11d20a3d67f8b98f2933a6426e8d427e2a1.json",
+      "bytes": 615,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_218_result.json"
+      ],
+      "format": "json"
+    },
+    "c8b2d7b8269bce75c07524b56ae9379eb67664cd40ea74ec57320819055139b3": {
+      "member": "c8b2d7b8269bce75c07524b56ae9379eb67664cd40ea74ec57320819055139b3.json",
+      "bytes": 871,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_228_result.json"
+      ],
+      "format": "json"
+    },
+    "cab118929f028a93595e7d9c1b015b52e259f5a921a05f41f64c6a0b76ce2043": {
+      "member": "cab118929f028a93595e7d9c1b015b52e259f5a921a05f41f64c6a0b76ce2043.json",
+      "bytes": 922,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_219_result.json"
+      ],
+      "format": "json"
+    },
+    "cb1f086b227fb1b39aeb3fb14cd1b2d5769dba615cf714c403e59983d264afc2": {
+      "member": "cb1f086b227fb1b39aeb3fb14cd1b2d5769dba615cf714c403e59983d264afc2.json",
+      "bytes": 432,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/iteration_26_result.json"
+      ],
+      "format": "json"
+    },
+    "cbf9ca0bb09b874afa7768a02e9696b2df1b7203dd9dc3fa16bec22ede0a41aa": {
+      "member": "cbf9ca0bb09b874afa7768a02e9696b2df1b7203dd9dc3fa16bec22ede0a41aa.json",
+      "bytes": 12419,
+      "original_records": [
+        "auto-pilot-kernel-a100/gpt6_20260906/results/a12_short.json"
+      ],
+      "format": "json"
+    },
+    "cc3363928b43b903db46d70c641f4dc76c33e06b107eaca0faf833f56eae4980": {
+      "member": "cc3363928b43b903db46d70c641f4dc76c33e06b107eaca0faf833f56eae4980.json",
+      "bytes": 773959,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/kb_no_numerical_requirements/service/evaluation-002/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "ccdb12554dca560c11998ff03d73a5ffe057b86de4837d20cdae1183b7508fe0": {
+      "member": "ccdb12554dca560c11998ff03d73a5ffe057b86de4837d20cdae1183b7508fe0.json",
+      "bytes": 772450,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/openevolve/service/evaluation-004/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "cd583672a5a33af7ec3a8b607b78a94a378ddf6caa2985ec9bdd117c4546ced8": {
+      "member": "cd583672a5a33af7ec3a8b607b78a94a378ddf6caa2985ec9bdd117c4546ced8.json",
+      "bytes": 394,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_92_result.json"
+      ],
+      "format": "json"
+    },
+    "d064870cbc558435d38acffa67fea3237e8b4d153a81a1049fc2fc522dfa254a": {
+      "member": "d064870cbc558435d38acffa67fea3237e8b4d153a81a1049fc2fc522dfa254a.json",
+      "bytes": 772579,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/openevolve/service/evaluation-002/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "d08bedf68c63540a711ab3f1a9c99bf4c1875214125c76f7fad4c3344e9a7944": {
+      "member": "d08bedf68c63540a711ab3f1a9c99bf4c1875214125c76f7fad4c3344e9a7944.json",
+      "bytes": 1727,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_228_result.json"
+      ],
+      "format": "json"
+    },
+    "d19d4c8581863ba10f6c220f22cf9fc05c2373412cbdf713912538f4fcdf495a": {
+      "member": "d19d4c8581863ba10f6c220f22cf9fc05c2373412cbdf713912538f4fcdf495a.json",
+      "bytes": 572,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_196_result.json"
+      ],
+      "format": "json"
+    },
+    "d33698a2d7ede801a4eb7ccc12ebe573e38d91766c85205c4d25c621afd581f1": {
+      "member": "d33698a2d7ede801a4eb7ccc12ebe573e38d91766c85205c4d25c621afd581f1.json",
+      "bytes": 1152,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/iteration_81_result.json"
+      ],
+      "format": "json"
+    },
+    "d575ccc0427b2ed9f054b6fb00db1b64efb1838a7c0242eb04ff8a511c40390e": {
+      "member": "d575ccc0427b2ed9f054b6fb00db1b64efb1838a7c0242eb04ff8a511c40390e.json",
+      "bytes": 831,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_223_result.json"
+      ],
+      "format": "json"
+    },
+    "d5b473edcfb736a57290bc664c5f14bfdc2c9ea4dacad2d0a8de3e3b7eb8cf20": {
+      "member": "d5b473edcfb736a57290bc664c5f14bfdc2c9ea4dacad2d0a8de3e3b7eb8cf20.json",
+      "bytes": 867,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_287_result.json"
+      ],
+      "format": "json"
+    },
+    "d5b850fe6a72bb47e49d7c2dd16154fa22a0d97a9cc6c3a40a57a8ff77167f16": {
+      "member": "d5b850fe6a72bb47e49d7c2dd16154fa22a0d97a9cc6c3a40a57a8ff77167f16.json",
+      "bytes": 565,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_105_result.json"
+      ],
+      "format": "json"
+    },
+    "d62e3b35c85612883c821df0ad88828399b64269d732f0bc8fbc64b6bc2c5354": {
+      "member": "d62e3b35c85612883c821df0ad88828399b64269d732f0bc8fbc64b6bc2c5354.json",
+      "bytes": 512,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_275_result.json"
+      ],
+      "format": "json"
+    },
+    "d8af16311317d090c8b64a6d9ac7d9f12f18edc6007494c8aa0896d06d5d0d14": {
+      "member": "d8af16311317d090c8b64a6d9ac7d9f12f18edc6007494c8aa0896d06d5d0d14.json",
+      "bytes": 627,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_118_result.json"
+      ],
+      "format": "json"
+    },
+    "da2b44fcdf7f8a418ee5b794b86809c3d86b776609092b600410f8a72d1b1243": {
+      "member": "da2b44fcdf7f8a418ee5b794b86809c3d86b776609092b600410f8a72d1b1243.json",
+      "bytes": 1079,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_239_result.json"
+      ],
+      "format": "json"
+    },
+    "dd78754dff598006af1b0e9094a75b290ffa010f3d653906d87b8615962c501f": {
+      "member": "dd78754dff598006af1b0e9094a75b290ffa010f3d653906d87b8615962c501f.json",
+      "bytes": 832,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_147_result.json"
+      ],
+      "format": "json"
+    },
+    "de9b6b51b1e6cdc4bd29ca4e1483b3cd7de94a710306689c1041cac9a8ac9be9": {
+      "member": "de9b6b51b1e6cdc4bd29ca4e1483b3cd7de94a710306689c1041cac9a8ac9be9.json",
+      "bytes": 669,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_106_result.json"
+      ],
+      "format": "json"
+    },
+    "df624df5c5eae019ca57ab1579e23abaa00a01904d5511777ac2941f3923c2d6": {
+      "member": "df624df5c5eae019ca57ab1579e23abaa00a01904d5511777ac2941f3923c2d6.json",
+      "bytes": 670,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_281_result.json"
+      ],
+      "format": "json"
+    },
+    "e050e3c951524125a4ec4bb717f8ca61963cdb6f3d5d33ccdc1ff9d07ceb15dd": {
+      "member": "e050e3c951524125a4ec4bb717f8ca61963cdb6f3d5d33ccdc1ff9d07ceb15dd.json",
+      "bytes": 1870,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_191_result.json"
+      ],
+      "format": "json"
+    },
+    "e06b0efd5a28e3a4d1b4aa508f141137cfe82162da3aa7827c1d2198d60dd960": {
+      "member": "e06b0efd5a28e3a4d1b4aa508f141137cfe82162da3aa7827c1d2198d60dd960.json",
+      "bytes": 42563,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/results/combined_screen.json"
+      ],
+      "format": "json"
+    },
+    "e3b5b3112e67974464e4cbe927ec1ca2b36c078c395b9934dceefc9560bb49fe": {
+      "member": "e3b5b3112e67974464e4cbe927ec1ca2b36c078c395b9934dceefc9560bb49fe.json",
+      "bytes": 584,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_212_result.json"
+      ],
+      "format": "json"
+    },
+    "e3f41bcae47faf9e55a8557acf32767510c284cc4227d2363bcd7f0ff5576fd5": {
+      "member": "e3f41bcae47faf9e55a8557acf32767510c284cc4227d2363bcd7f0ff5576fd5.json",
+      "bytes": 1158,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_311_result.json"
+      ],
+      "format": "json"
+    },
+    "e4821f1be928bd539128fb8c47cd64569ab75af8d8283195b25b9b4c252fb4bf": {
+      "member": "e4821f1be928bd539128fb8c47cd64569ab75af8d8283195b25b9b4c252fb4bf.txt",
+      "bytes": 301166,
+      "original_records": [
+        "auto-pilot-kernel-a100/references/CODEX_OPTIMIZATION_LOG.md"
+      ],
+      "format": "text"
+    },
+    "e725acd4d95ff63eab35780f4f009a9f13e37df546bf051293c1e144b1452983": {
+      "member": "e725acd4d95ff63eab35780f4f009a9f13e37df546bf051293c1e144b1452983.json",
+      "bytes": 1098,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_251_result.json"
+      ],
+      "format": "json"
+    },
+    "e73c8f18364661e2fffea243f58656191c57ec5472651caeca167509b36e083c": {
+      "member": "e73c8f18364661e2fffea243f58656191c57ec5472651caeca167509b36e083c.json",
+      "bytes": 45493,
+      "original_records": [
+        "auto-pilot-kernel-h200/gpt6_20260905/results/g6_09_screen.json"
+      ],
+      "format": "json"
+    },
+    "e7d5c83d6c943075e6ae792c3509fdf89ee81468e4c7e5ca8d5de2e447b4c741": {
+      "member": "e7d5c83d6c943075e6ae792c3509fdf89ee81468e4c7e5ca8d5de2e447b4c741.json",
+      "bytes": 506,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_236_result.json"
+      ],
+      "format": "json"
+    },
+    "e8324900968ec15837866bfbef5b7446bc8ea1eaa1d49b6a098fb25abc698b5b": {
+      "member": "e8324900968ec15837866bfbef5b7446bc8ea1eaa1d49b6a098fb25abc698b5b.json",
+      "bytes": 715,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_279_result.json"
+      ],
+      "format": "json"
+    },
+    "e887ec552810fe1b1219828b256361f2b3ccfa75ce6bb60127059bda3fdcfd8d": {
+      "member": "e887ec552810fe1b1219828b256361f2b3ccfa75ce6bb60127059bda3fdcfd8d.json",
+      "bytes": 901,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_269_result.json"
+      ],
+      "format": "json"
+    },
+    "e88a90f4f9ece3d86a456968571658757c89abaec5a309eec02a5cd37ca29592": {
+      "member": "e88a90f4f9ece3d86a456968571658757c89abaec5a309eec02a5cd37ca29592.json",
+      "bytes": 3705,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/iteration_87_result.json"
+      ],
+      "format": "json"
+    },
+    "e8a0b7e33553a862323577d70bbe95c04de438329ee39552ba1150c29d397a2d": {
+      "member": "e8a0b7e33553a862323577d70bbe95c04de438329ee39552ba1150c29d397a2d.json",
+      "bytes": 1419,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/iteration_86_result.json"
+      ],
+      "format": "json"
+    },
+    "e8e115cb2ae95c32e9821d46025c78a6eeaf3320bf6d47fbbb034a955af89d7a": {
+      "member": "e8e115cb2ae95c32e9821d46025c78a6eeaf3320bf6d47fbbb034a955af89d7a.json",
+      "bytes": 1051,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_224_result.json"
+      ],
+      "format": "json"
+    },
+    "e997595b461a82b2c94a66eebf06882a06a9740e8b889b0ae924379f35573f26": {
+      "member": "e997595b461a82b2c94a66eebf06882a06a9740e8b889b0ae924379f35573f26.json",
+      "bytes": 361,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/iteration_19_result.json"
+      ],
+      "format": "json"
+    },
+    "ebb3d77f7ca511e65b20b84a13d133d72ef39c12398784c0db4960c0479a9991": {
+      "member": "ebb3d77f7ca511e65b20b84a13d133d72ef39c12398784c0db4960c0479a9991.json",
+      "bytes": 518,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_289_result.json"
+      ],
+      "format": "json"
+    },
+    "ebb7304401d90a478448adbb6fb54496d5a5daff7d8700eb12da5dfcc64b70d9": {
+      "member": "ebb7304401d90a478448adbb6fb54496d5a5daff7d8700eb12da5dfcc64b70d9.json",
+      "bytes": 12349,
+      "original_records": [
+        "auto-pilot-kernel-a100/gpt6_20260906/results/a11_short.json"
+      ],
+      "format": "json"
+    },
+    "ebba405806a2c0b9ad4193c54053dd358172b0fecc5db905f10f50a4b4ab5d73": {
+      "member": "ebba405806a2c0b9ad4193c54053dd358172b0fecc5db905f10f50a4b4ab5d73.json",
+      "bytes": 774383,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/kb_no_opportunities/service/evaluation-002/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "ec4562558e2953e6c60321bf01450523ff8a395f2d0b2cc886288c766a3e3358": {
+      "member": "ec4562558e2953e6c60321bf01450523ff8a395f2d0b2cc886288c766a3e3358.json",
+      "bytes": 59558,
+      "original_records": [
+        "auto-pilot-kernel-h200/gpt6_20260905/results/g6_05_screen.json"
+      ],
+      "format": "json"
+    },
+    "edac5ca39ae90a5001567e410c86c4c0b7c5b8c11719c669ba02474d6e9c8e0c": {
+      "member": "edac5ca39ae90a5001567e410c86c4c0b7c5b8c11719c669ba02474d6e9c8e0c.json",
+      "bytes": 3213,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_240_result.json"
+      ],
+      "format": "json"
+    },
+    "edc4b090885cec30b3d723423969c6ab545ab10209c7041636c37a789a2e8c66": {
+      "member": "edc4b090885cec30b3d723423969c6ab545ab10209c7041636c37a789a2e8c66.json",
+      "bytes": 1306,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_309_result.json"
+      ],
+      "format": "json"
+    },
+    "edc8475656f03650d006cd6873bf5a6ffe41d18883edbb2be98d95baf943c1da": {
+      "member": "edc8475656f03650d006cd6873bf5a6ffe41d18883edbb2be98d95baf943c1da.json",
+      "bytes": 1417,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/iteration_82_result.json"
+      ],
+      "format": "json"
+    },
+    "ee9db063d5de07f1197add3736c897968a770a2da6ec51dabcaf1ff9589dd758": {
+      "member": "ee9db063d5de07f1197add3736c897968a770a2da6ec51dabcaf1ff9589dd758.json",
+      "bytes": 43352,
+      "original_records": [
+        "auto-pilot-kernel-h200/gpt6_20260905/results/g6_07_screen.json"
+      ],
+      "format": "json"
+    },
+    "eedde5c8da54f6dd4089604de66a27040bd4adcaefa91680d973bed749f28dcd": {
+      "member": "eedde5c8da54f6dd4089604de66a27040bd4adcaefa91680d973bed749f28dcd.json",
+      "bytes": 772839,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/skydiscover_adaevolve/service/evaluation-004/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "eeee8cce3a5551aedb0e5551518ab5c1deeca46d6d4aa726868412c03f96222a": {
+      "member": "eeee8cce3a5551aedb0e5551518ab5c1deeca46d6d4aa726868412c03f96222a.json",
+      "bytes": 17279,
+      "original_records": [
+        "auto-pilot-kernel-h200/gpt6_20260905/results/stream_adapter_check.json"
+      ],
+      "format": "json"
+    },
+    "ef64eaffc6f7227f5fefd9502de20940837fcc01916f6f9be40b72bd10a48bc6": {
+      "member": "ef64eaffc6f7227f5fefd9502de20940837fcc01916f6f9be40b72bd10a48bc6.json",
+      "bytes": 96239,
+      "original_records": [
+        "auto-pilot-kernel-h200/gpt6_20260905/results/baseline_qualification.json"
+      ],
+      "format": "json"
+    },
+    "eff1dfd23e088db003c73cf7e075f1f1817ac000b00d4abb4e65f0140946a7e5": {
+      "member": "eff1dfd23e088db003c73cf7e075f1f1817ac000b00d4abb4e65f0140946a7e5.json",
+      "bytes": 209179,
+      "original_records": [
+        "auto-pilot-kernel-a100/gpt6_20260906/results/final_paired.json"
+      ],
+      "format": "json"
+    },
+    "f1fb616643c70684b3bdce68f387c19523e4fdd8aee7b0edfceb6feab791a1d3": {
+      "member": "f1fb616643c70684b3bdce68f387c19523e4fdd8aee7b0edfceb6feab791a1d3.json",
+      "bytes": 1009,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_227_result.json"
+      ],
+      "format": "json"
+    },
+    "f2d655368644c785171570c2db41cf6cffed7a287ea3313d4e84f1ba7b308fdb": {
+      "member": "f2d655368644c785171570c2db41cf6cffed7a287ea3313d4e84f1ba7b308fdb.json",
+      "bytes": 679,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_205_result.json"
+      ],
+      "format": "json"
+    },
+    "f3773caf2a8b3eb7a28734b79c18f627acd334c4e8e11be0c4b09826d1965cf1": {
+      "member": "f3773caf2a8b3eb7a28734b79c18f627acd334c4e8e11be0c4b09826d1965cf1.json",
+      "bytes": 621,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_195_result.json"
+      ],
+      "format": "json"
+    },
+    "f57140f33e79ee0ee853cebf765756989dce8fb1644e1a517244a6606022df01": {
+      "member": "f57140f33e79ee0ee853cebf765756989dce8fb1644e1a517244a6606022df01.json",
+      "bytes": 1009,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_300_result.json"
+      ],
+      "format": "json"
+    },
+    "f611f5d3cb069fc60bfed4ea17ce33be51eab286182aef29ce09110e01a9a938": {
+      "member": "f611f5d3cb069fc60bfed4ea17ce33be51eab286182aef29ce09110e01a9a938.json",
+      "bytes": 382,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_278_result.json"
+      ],
+      "format": "json"
+    },
+    "f748e1715a0bef3f8d6d4fbb37c1f54faa77ef7d50c5ba1c6cbcc3a9ca6e9929": {
+      "member": "f748e1715a0bef3f8d6d4fbb37c1f54faa77ef7d50c5ba1c6cbcc3a9ca6e9929.json",
+      "bytes": 420,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/paper_reproduction/repositories/h20/iteration_20_result.json"
+      ],
+      "format": "json"
+    },
+    "f8ab9bb87d99b8a3c49a4c34257df1102f99735c32bd8d125b0c78ba5ccb614a": {
+      "member": "f8ab9bb87d99b8a3c49a4c34257df1102f99735c32bd8d125b0c78ba5ccb614a.json",
+      "bytes": 577,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_234_result.json"
+      ],
+      "format": "json"
+    },
+    "fba0a347778a683ae4ae3da3464905cc15e132f46d483d410f900d7f33e364f7": {
+      "member": "fba0a347778a683ae4ae3da3464905cc15e132f46d483d410f900d7f33e364f7.json",
+      "bytes": 773617,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/h20_search_pilot_20260911/continuation_gpu7/transport_resume/search/runs/kb_no_history/service/evaluation-002/gpu/authenticated_result.json"
+      ],
+      "format": "json"
+    },
+    "fc29401c120ab75b0afd8174bb790a7de4dc52103ee0c5baa7cc0e30bace3106": {
+      "member": "fc29401c120ab75b0afd8174bb790a7de4dc52103ee0c5baa7cc0e30bace3106.json",
+      "bytes": 16499,
+      "original_records": [
+        "unified_rl_kernel_opt_gpt6/results/prefill_screen2.json"
+      ],
+      "format": "json"
+    },
+    "fd0940679965f086d2d767a501f376268fbbadc846905f64da4da2f30220bf78": {
+      "member": "fd0940679965f086d2d767a501f376268fbbadc846905f64da4da2f30220bf78.json",
+      "bytes": 1712,
+      "original_records": [
+        "auto-pilot-kernel-h200/iteration_220_result.json"
+      ],
+      "format": "json"
+    },
+    "fe171f796532565e0858b6d813a255cd7013b0fbe891520281929b82cdd83851": {
+      "member": "fe171f796532565e0858b6d813a255cd7013b0fbe891520281929b82cdd83851.json",
+      "bytes": 887,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_270_result.json"
+      ],
+      "format": "json"
+    },
+    "ff0527e7534a883299c6b685e5bc5a2b41e4aed2b73f9829d4e93eca4d60d7c7": {
+      "member": "ff0527e7534a883299c6b685e5bc5a2b41e4aed2b73f9829d4e93eca4d60d7c7.json",
+      "bytes": 505,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_192_result.json"
+      ],
+      "format": "json"
+    },
+    "ff96cfe465900796f17e2c6987eba270645e83093843f6cc68a6e799ab6d2af5": {
+      "member": "ff96cfe465900796f17e2c6987eba270645e83093843f6cc68a6e799ab6d2af5.json",
+      "bytes": 1020,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_225_result.json"
+      ],
+      "format": "json"
+    },
+    "ff9e1e88eb832858f15e8f4ccec61aab029a4daac17ecbc69d857057c05f7ac5": {
+      "member": "ff9e1e88eb832858f15e8f4ccec61aab029a4daac17ecbc69d857057c05f7ac5.json",
+      "bytes": 750,
+      "original_records": [
+        "auto-pilot-kernel-a100/iteration_242_result.json"
+      ],
+      "format": "json"
+    }
+  }
+}

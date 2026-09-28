@@ -1,0 +1,564 @@
+{
+  "selected_source": "kernels/unified_attn_ext.cu",
+  "sha256": "86d0fb74648abf82b92ce3a3f08b1480f17fbdfcb028705c43dbd0ddc9571897",
+  "immutable_snapshot": "kernels/snapshots/g6_11_combined.cu",
+  "original_source": "auto-pilot-kernel-h200/gpt6_20260905/kernels/g6_11_combined.cu",
+  "source_bound_final_grid": {
+    "record": "auto-pilot-kernel-h200/gpt6_20260905/results/final_paired.json",
+    "record_sha256": "225f9ceed37e7aa514e647e01edfe3bbb38860129ca862eb9ad078dde4d47345",
+    "source_key": "g6_11_combined",
+    "torch": "2.8.0+cu128",
+    "cases": 32,
+    "rows": [
+      {
+        "phase": "prefill",
+        "batch": 1,
+        "length": 1024,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 0.02506900019943714,
+          "g6_11_combined": 0.025073999539017677,
+          "FA3": 0.02100300043821335
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 1,
+        "length": 4096,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 0.29085999727249146,
+          "g6_11_combined": 0.28863200545310974,
+          "FA3": 0.2245039939880371
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 1,
+        "length": 8192,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 1.0990879535675049,
+          "g6_11_combined": 1.1014959812164307,
+          "FA3": 0.8640639781951904
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 1,
+        "length": 16384,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 4.403264045715332,
+          "g6_11_combined": 4.315343856811523,
+          "FA3": 3.328495979309082
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 4,
+        "length": 1024,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 0.10566399991512299,
+          "g6_11_combined": 0.10031600296497345,
+          "FA3": 0.07359199970960617
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 4,
+        "length": 4096,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 1.2089600563049316,
+          "g6_11_combined": 1.1951359510421753,
+          "FA3": 0.8896960020065308
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 4,
+        "length": 8192,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 4.669280052185059,
+          "g6_11_combined": 4.497151851654053,
+          "FA3": 3.4096319675445557
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 4,
+        "length": 16384,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 18.60745620727539,
+          "g6_11_combined": 17.056447982788086,
+          "FA3": 13.3984956741333
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 8,
+        "length": 1024,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 0.21174399554729462,
+          "g6_11_combined": 0.19979999959468842,
+          "FA3": 0.14616000652313232
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 8,
+        "length": 4096,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 2.4699840545654297,
+          "g6_11_combined": 2.427999973297119,
+          "FA3": 1.7983039617538452
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 8,
+        "length": 8192,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 10.117280006408691,
+          "g6_11_combined": 8.956671714782715,
+          "FA3": 6.875135898590088
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 8,
+        "length": 16384,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 40.83126449584961,
+          "g6_11_combined": 35.51148986816406,
+          "FA3": 27.082368850708008
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 16,
+        "length": 1024,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 0.42392000555992126,
+          "g6_11_combined": 0.41393598914146423,
+          "FA3": 0.2917279899120331
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.0078125
+      },
+      {
+        "phase": "prefill",
+        "batch": 16,
+        "length": 4096,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 5.447328090667725,
+          "g6_11_combined": 4.833119869232178,
+          "FA3": 3.6860480308532715
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.0078125
+      },
+      {
+        "phase": "prefill",
+        "batch": 16,
+        "length": 8192,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 20.89606475830078,
+          "g6_11_combined": 17.802400588989258,
+          "FA3": 13.892127990722656
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.0078125
+      },
+      {
+        "phase": "prefill",
+        "batch": 16,
+        "length": 16384,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 82.72576141357422,
+          "g6_11_combined": 70.39926147460938,
+          "FA3": 55.376190185546875
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.0078125
+      },
+      {
+        "phase": "decode",
+        "batch": 1,
+        "length": 128,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 0.003461000043898821,
+          "g6_11_combined": 0.003456000005826354,
+          "FlashInfer0.6.18.post1[fa3,TC,PDL,graph,NHD,plan_graph=True]": 0.007600000128149986,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]": 0.005789000075310469
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]",
+        "external_max_abs": 0.001953125
+      },
+      {
+        "phase": "decode",
+        "batch": 1,
+        "length": 1024,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 0.014374000020325184,
+          "g6_11_combined": 0.01016400009393692,
+          "FlashInfer0.6.18.post1[fa3,TC,PDL,graph,HND,plan_graph=False]": 0.018843000754714012,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]": 0.008659999817609787
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]",
+        "external_max_abs": 0.0009765625
+      },
+      {
+        "phase": "decode",
+        "batch": 1,
+        "length": 4096,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 0.02710700035095215,
+          "g6_11_combined": 0.027241000905632973,
+          "FlashInfer0.6.18.post1[fa3,TC,PDL,graph,HND,plan_graph=False]": 0.05935300141572952,
+          "FlashInfer0.6.18.post1[fa2,CUDA,PDL,graph,HND,plan_graph=False]": 0.01166400033980608
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,CUDA,PDL,graph,HND,plan_graph=False]",
+        "external_max_abs": 0.00048828125
+      },
+      {
+        "phase": "decode",
+        "batch": 1,
+        "length": 8192,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 0.04976300150156021,
+          "g6_11_combined": 0.050144001841545105,
+          "FlashInfer0.6.18.post1[fa3,TC,PDL,graph,NHD,plan_graph=True]": 0.1135530024766922,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]": 0.015231000259518623
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]",
+        "external_max_abs": 0.000244140625
+      },
+      {
+        "phase": "decode",
+        "batch": 4,
+        "length": 128,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 0.00356599991209805,
+          "g6_11_combined": 0.0035649999044835567,
+          "FlashInfer0.6.18.post1[fa3,TC,noPDL,graph,HND,plan_graph=False]": 0.00880299974232912,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]": 0.006138000171631575
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "decode",
+        "batch": 4,
+        "length": 1024,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 0.014682999812066555,
+          "g6_11_combined": 0.011487999930977821,
+          "FlashInfer0.6.18.post1[fa3,TC,noPDL,graph,HND,plan_graph=True]": 0.019641000777482986,
+          "FlashInfer0.6.18.post1[fa2,CUDA,PDL,graph,HND,plan_graph=False]": 0.011301999911665916
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,CUDA,PDL,graph,HND,plan_graph=False]",
+        "external_max_abs": 0.0009765625
+      },
+      {
+        "phase": "decode",
+        "batch": 4,
+        "length": 4096,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 0.037151999771595,
+          "g6_11_combined": 0.037202998995780945,
+          "FlashInfer0.6.18.post1[fa3,TC,PDL,graph,NHD,plan_graph=True]": 0.06428100168704987,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]": 0.02749199979007244
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]",
+        "external_max_abs": 0.00048828125
+      },
+      {
+        "phase": "decode",
+        "batch": 4,
+        "length": 8192,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 0.07018399983644485,
+          "g6_11_combined": 0.07007099688053131,
+          "FlashInfer0.6.18.post1[fa3,TC,PDL,graph,HND,plan_graph=True]": 0.12530100345611572,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]": 0.04226699844002724
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]",
+        "external_max_abs": 0.000244140625
+      },
+      {
+        "phase": "decode",
+        "batch": 8,
+        "length": 128,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 0.003831000067293644,
+          "g6_11_combined": 0.0036810000892728567,
+          "FlashInfer0.6.18.post1[fa3,TC,PDL,graph,HND,plan_graph=False]": 0.012852000072598457,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]": 0.0062779998406767845
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "decode",
+        "batch": 8,
+        "length": 1024,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 0.015541999600827694,
+          "g6_11_combined": 0.013740000315010548,
+          "FlashInfer0.6.18.post1[fa3,TC,noPDL,graph,HND,plan_graph=True]": 0.03644600138068199,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]": 0.014841999858617783
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]",
+        "external_max_abs": 0.0009765625
+      },
+      {
+        "phase": "decode",
+        "batch": 8,
+        "length": 4096,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 0.04831000044941902,
+          "g6_11_combined": 0.048395998775959015,
+          "FlashInfer0.6.18.post1[fa3,TC,PDL,graph,NHD,plan_graph=True]": 0.12890499830245972,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]": 0.042587000876665115
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]",
+        "external_max_abs": 0.00048828125
+      },
+      {
+        "phase": "decode",
+        "batch": 8,
+        "length": 8192,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 0.08798500150442123,
+          "g6_11_combined": 0.08862199634313583,
+          "FlashInfer0.6.18.post1[fa3,TC,noPDL,graph,NHD,plan_graph=True]": 0.26014599204063416,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]": 0.07149799913167953
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]",
+        "external_max_abs": 0.00048828125
+      },
+      {
+        "phase": "decode",
+        "batch": 16,
+        "length": 128,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 0.004579000174999237,
+          "g6_11_combined": 0.004356000106781721,
+          "FlashInfer0.6.18.post1[fa3,TC,noPDL,graph,NHD,plan_graph=True]": 0.022414999082684517,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]": 0.006945999804884195
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "decode",
+        "batch": 16,
+        "length": 1024,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 0.02549700066447258,
+          "g6_11_combined": 0.021227000281214714,
+          "FlashInfer0.6.18.post1[fa3,TC,noPDL,graph,NHD,plan_graph=True]": 0.07233799993991852,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]": 0.028109999373555183
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]",
+        "external_max_abs": 0.001953125
+      },
+      {
+        "phase": "decode",
+        "batch": 16,
+        "length": 4096,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 0.07505899667739868,
+          "g6_11_combined": 0.07444900274276733,
+          "FlashInfer0.6.18.post1[fa3,TC,PDL,graph,NHD,plan_graph=True]": 0.265531986951828,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]": 0.0728679969906807
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]",
+        "external_max_abs": 0.00048828125
+      },
+      {
+        "phase": "decode",
+        "batch": 16,
+        "length": 8192,
+        "raw_equal": {
+          "iteration228_stream": true,
+          "g6_11_combined": true
+        },
+        "median_ms": {
+          "iteration228_stream": 0.15466299653053284,
+          "g6_11_combined": 0.15406599640846252,
+          "FlashInfer0.6.18.post1[fa3,TC,PDL,graph,NHD,plan_graph=True]": 0.5218219757080078,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]": 0.13420900702476501
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]",
+        "external_max_abs": 0.00048828125
+      }
+    ]
+  },
+  "expanded_validation": [
+    {
+      "record": "auto-pilot-kernel-h200/gpt6_20260905/results/attention_raw_final.json",
+      "record_sha256": "875b7d99e95e16e55212a97a76714404281dcee71dcc69229272f67af8c874a6",
+      "case_rows": 60,
+      "boolean_checks_passed": 120,
+      "changed_input_graph_cases_passed": 48,
+      "all_executed_checks_passed": true,
+      "not_run": "Changed-input graph test omitted at length16384"
+    },
+    {
+      "record": "auto-pilot-kernel-h200/gpt6_20260905/results/attention_partition_final.json",
+      "record_sha256": "213c6000f9cb7f88ba1d597e80d76e6042ca33ede54a3b74cacded26c22f066c",
+      "case_rows": 16,
+      "boolean_checks_passed": 32,
+      "changed_input_graph_cases_passed": 0,
+      "all_executed_checks_passed": true,
+      "not_run": null
+    }
+  ],
+  "note": "Saved GPU evidence; packaging does not rerun GPU tests."
+}

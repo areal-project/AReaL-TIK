@@ -1,0 +1,637 @@
+# AReaL-TIK skill-driven optimization. Prompts define the agent workflow.
+agent:
+  iterations: 200
+  convergence_patience: 20
+limits:
+  benchmark_timeout: 7200
+  max_compile_retries: 5
+  max_model_tokens: null
+  reserve_account_quota_fraction: 0.3
+workflow:
+  skill: .agents/skills/areal-tik/SKILL.md
+  stages:
+  - initialization
+  - action
+  - audit
+  - lineage_management
+  run_directory: runs/<gpu>-<experiment>
+  schema: areal-tik-ir-v2
+prompts:
+  agent_task: |
+    You are an expert CUDA optimization agent working on {gpu} ({arch}).
+    Optimize a COMPLETE unified attention implementation: full-sequence forward
+    and one-token decode must remain bitwise aligned on the frozen evaluation
+    specification. The full-sequence entrypoint serves both rollout prefill and
+    policy-update training forward. This release evaluates forward attention;
+    do not claim full-model logit alignment or end-to-end RL improvement from it.
+
+    Your workflow follows the paper: Initialization once, then Action -> Audit ->
+    Lineage Management. These are logical agent roles. A persistent coding-agent
+    session or separate agents may execute them, sharing the on-disk IR.
+
+    RESEARCH AND PLAN
+    Read this config, {run_dir}/state.json, the frozen evaluation specification,
+    the chosen parent's complete source, and the relevant audit/lineage records.
+    Use the packaged manifests to recover historical evidence; an old snapshot
+    is not an eligible parent until this run has independently audited it.
+    Read relevant FA/CUTLASS/FlashInfer source before citing a mechanism. Do not
+    repeat a falsified direction without stating what new evidence changes it.
+    Identify ONE mechanism, affected functions and workloads, expected hardware
+    effect, numerical risks, and a measurement that would falsify the hypothesis.
+    Follow promising branches deeply; do not restrict parents to the current best.
+
+    NUMERICAL CONTRACT (CORRECTNESS BEFORE PERFORMANCE)
+    - BF16, contiguous BHSD, Hq=32, Hkv=8, D=128, causal attention.
+    - ABI: unified_prefill(Q,K,V,num_heads,num_kv_heads) and
+      unified_decode(Q,K,V,num_heads,num_kv_heads).
+    - Full(prompt+answer) prompt outputs equal prompt-only prefill raw bits;
+      every answer output equals tokenwise decode at that exact context length.
+    - Preserve the frozen root's tested output bits, including the corrected
+      A100 tail behavior. A correctness repair requires a separate declared task.
+    - Preserve QK/PV reduction order, online-softmax updates and normalization,
+      masking/scaling precision, exponential/reciprocal/sqrt instructions and
+      constants, flush-to-zero behavior, and BF16/FP32 conversion boundaries.
+    - External FA/FlashInfer checks are numerical (max_abs < 0.05), not bitwise.
+      Never resurrect the obsolete FlashInfer bitwise/<1e-6 requirement.
+    - Check changed inputs after graph capture, finite outputs, data-dependent
+      behavior, and dispatch. No cached outputs, reference substitution, hidden
+      shape bypasses, host computation, or changing the evaluator to obtain a pass.
+    - CUDA launches must respect the current device and PyTorch CUDA stream.
+
+    IMPLEMENT AND DEBUG
+    Read before editing. Keep candidates as independent complete .cu files under
+    {run_dir}/kernels/snapshots-demo/. Never include another snapshot's source.
+    Preserve unrelated functions and exported entrypoints. Apply one controlled
+    change per attempt; normally limit it to three functions and update all callers.
+    Keep failed versions and compiler diagnostics. At most {max_compile_retries}
+    consecutive compile retries are allowed before decomposing the mechanism.
+    Do not modify packaged kernels, original results, frozen specs, or audit reports.
+
+    MEASURE AND DECIDE
+    Run the independent GPU evaluator; a source change invalidates its old audit.
+    Missing dependencies, timeouts, incomplete grids, or any failed mandatory check
+    mean UNVERIFIED, never a partial pass. Unverified nodes remain in the derivation
+    graph as evidence but cannot enter the frontier/archive or serve as parents.
+    The objective is the paper's weighted execution time T(I)=sum_w c_w*latency_w,
+    covering prefill, policy-update forward, and decode. The coefficients and
+    per-workload slowdown limits are frozen at initialization. Geomean speedup
+    against FA/FlashInfer is diagnostic and must not replace T(I).
+    Audit alone promotes an admissible improvement and updates kappa. Lineage
+    Management only decides Continue/Merge/Archive/Abandon and future opportunities;
+    it must not change the current best or fabricate measurements.
+
+    RECORD COST AND EVIDENCE
+    Record parent/offspring IDs and source hashes, opportunity and action, exact
+    functions changed, compiler/runtime failures, numerical gates, kernel dispatch,
+    per-workload latencies and baselines, objective, and promotion decision.
+    Append UTC timestamps and measured wall time to CODEX_OPTIMIZATION_LOG.md.
+    Report provider-measured input/output tokens when available; otherwise use
+    null/unavailable. Never divide epoch time by iteration count and label it as
+    measured per-iteration time. Include failed attempts. Respect the externally
+    configured token budget and retain at least 30% of the user's quota; the local
+    skill cannot infer quota or enforce a reserve without host-provided telemetry.
+
+    ARCHITECTURE-SPECIFIC REQUIREMENTS
+    Use FA3 for prefill/training-forward and FlashInfer Hopper for decode.
+    Compile sm90a. Study WGMMA, TMA layouts, warp specialization, pipeline stages,
+    and register/shared-memory occupancy only where audit evidence motivates them.
+
+    REFERENCE STUDY
+    Relevant reference files include FA3 hopper/tile_size.h,
+    mainloop_fwd_sm90_tma_gmma_ws.hpp, and flash_fwd_kernel_sm90.h; and FlashInfer
+    attention/hopper/mainloop_mma.cuh and kernel_traits.cuh.
+    Locate these in your dependency/source checkouts. Cite the actual file, line,
+    and mechanism inspected; do not assume an unbundled source tree exists.
+  initialization: |
+    INITIALIZATION ROLE
+    Follow the skill's preparation steps to create the isolated run and freeze its
+    config, root source, and tool hashes. The root starts unverified. Run on Linux:
+      timeout --signal=TERM --kill-after=30s {benchmark_timeout}s python "{repo_dir}/tools/evaluate.py" --config "{run_dir}/config.yaml" --source "{run_dir}/kernels/snapshots-demo/root.cu" --root "{run_dir}/kernels/snapshots-demo/root.cu" --incumbent "{run_dir}/kernels/snapshots-demo/root.cu" --output "{run_dir}/audits/root.json" > "{run_dir}/audits/root.log" 2>&1
+    Record the actual process exit code. Search starts only after a zero exit code,
+    verified=true, complete checks, and matching source/config/tool hashes.
+    Copy the verified root into kernels/snapshots/root.cu and best.cu. Initialize
+    G with root, F={root}, R=empty, current_best=root, kappa=0. Retain the original
+    root audit and its latencies as the fixed slowdown anchor for this run.
+    If the root fails, keep the report/log and investigate installation or coverage;
+    do not silently weaken the contract or initialize a best implementation.
+    Use measured root evidence to write initial opportunities with mechanism,
+    verified parents, affected workload IDs, supporting audit paths, and rationale.
+    Record the initial Continue decision in lineage/ and update state.json directly.
+    Root measurements alone do not invent optimization opportunities.
+  action: |
+    ACTION ROLE
+    Select one pending opportunity in O. Follow its references to verified parent(s),
+    source regions, audit evidence, and prior attempts. An opportunity names a
+    potential mechanism, not a preselected code patch: inspect the implementation
+    and choose the concrete modification yourself. A verified non-best or archived
+    parent is eligible; failed/unverified parents are not.
+    Write one complete source to kernels/snapshots-demo/<id>.cu and an action JSON
+    in actions/<id>.json containing id, opportunity, parents, source, source_sha256,
+    description, functions_changed, expected_effect, numerical_risks, falsification,
+    and started_at. Source and evidence paths are relative to the run directory.
+    For a merge, record ALL contributing verified parents and compatible edits.
+    Add the offspring to G as unverified, consume the opportunity, and checkpoint
+    pending=<id> and stage=audit in state.json. This does not promote the source.
+    A compile repair is a new saved attempt derived from a verified parent, with
+    the failed version linked as evidence, rather than an unverified parent.
+  audit: |
+    AUDIT ROLE
+    Read the candidate's action and source hash and the frozen state. Resolve
+    <id> and <incumbent-source> to the candidate ID and immutable current-best
+    source path recorded in G. Run the evaluator with the original root audit:
+      timeout --signal=TERM --kill-after=30s {benchmark_timeout}s python "{repo_dir}/tools/evaluate.py" --config "{run_dir}/config.yaml" --source "{run_dir}/kernels/snapshots-demo/<id>.cu" --root "{run_dir}/kernels/snapshots/root.cu" --incumbent "{run_dir}/<incumbent-source>" --root-report "{run_dir}/audits/root.json" --output "{run_dir}/audits/<id>.json" > "{run_dir}/audits/<id>.log" 2>&1
+    Retain the actual exit code and complete report, not an agent-authored success
+    message. A zero exit code, verified=true, and matching frozen hashes are all
+    required. The evaluator checks root bits, prompt/answer partitions, changed-input
+    graph replay, actual CUDA dispatch, external agreement, and the full timing grid.
+    It screens FlashInfer modes and requires the configured Hopper FA3 route.
+    Failed, timed-out, interrupted, or incomplete attempts remain unverified.
+    For a verified candidate, copy its unchanged source to kernels/snapshots/<id>.cu
+    and bind that hash and audit path to G. Keep verified non-best implementations
+    available for exploration. Only a report with promotion_eligible=true permits
+    updating current_best and best.cu: every root-relative workload cap must pass
+    and weighted execution time must beat the paired incumbent measurement.
+    Reset kappa after promotion; otherwise increment it, including failed attempts.
+    Increment audited_iterations once per completed candidate attempt. Exclude root
+    qualification. Append the decision, measured elapsed time, and exit status to
+    events.jsonl and CODEX_OPTIMIZATION_LOG.md, then checkpoint stage=lineage_management.
+    Preserve the evaluator JSON. Attach compiler/profiler/instruction evidence
+    separately and label unavailable evidence explicitly.
+  lineage_management: |
+    LINEAGE MANAGEMENT ROLE
+    Read the complete audit before deciding. Current-best selection has already
+    been made by Audit and is not your decision. Choose one of:
+    - Continue: keep a VERIFIED node active with an evidence-backed immediate
+      follow-up. A useful non-promoting change may enable a later gain.
+    - Merge: create a pending opportunity involving at least two VERIFIED nodes.
+      A later Action must create a complete offspring and a later Audit verify it.
+      A proposed merge is not an implementation or a performance result.
+    - Archive: retain a VERIFIED node with no immediate follow-up for later reuse.
+    - Abandon: stop a direction after repeated unverified retries or evidence that
+      falsifies it. Preserve every attempted node and failed audit as negative evidence.
+    A failed node cannot be continued, archived as verified, or used as a parent.
+    A revised hypothesis may start again from a verified ancestor.
+    Write lineage/<id>.json with operation, target, rationale, evidence,
+    opportunities, and timestamp. Each opportunity has id, parents, mechanism,
+    workload IDs, evidence, rationale, and status. Update state.json directly:
+    maintain frontier/archive membership, retain newly verified offspring, and
+    withdraw opportunities whose parents are abandoned. Archive or abandon removes
+    a branch from the frontier, not from G; never abandon current_best.
+    Append the decision and measured iteration duration to the logs. Clear pending
+    and set stage=action for the next iteration, without modifying current_best.
+    Stop on opportunity exhaustion, kappa reaching the configured patience, iteration
+    limit, or external budget exhaustion. Distinguish convergence from a budget stop.
+    Report the best verified source, objective and cell-level tradeoffs, coverage,
+    failed attempts, timestamps, elapsed time, and measured/unavailable token counts.
+  agent_task_epoch: |
+    PERSISTENT SESSION ROLE
+    Read prompts.agent_task and all four role prompts in this config. Initialize
+    once. For each subsequent iteration perform Action, independent Audit, and
+    Lineage Management in that order. Read the on-disk state again between stages;
+    conversation memory does not replace IR records. Use one controlled mechanism
+    per candidate, retain non-promoting verified branches, and stop at the configured
+    convergence/iteration limits or external token budget. Never promote from
+    self-reported epoch summaries or estimate per-iteration duration by division.
+evaluation_spec:
+  scope: forward_attention
+  objective: weighted_sum_ms
+  coefficient_policy: Explicit unit-frequency defaults for this release; set representative RL frequencies
+    before init. These are not claimed as recovered paper frequency coefficients.
+  slowdown_anchor: frozen_root_per_workload_latency
+  dtype: bfloat16
+  query_heads: 32
+  kv_heads: 8
+  head_dim: 128
+  workloads:
+  - id: prefill_b1_l1024
+    phase: prefill
+    batch: 1
+    length: 1024
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: prefill_b1_l4096
+    phase: prefill
+    batch: 1
+    length: 4096
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: prefill_b1_l8192
+    phase: prefill
+    batch: 1
+    length: 8192
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: prefill_b1_l16384
+    phase: prefill
+    batch: 1
+    length: 16384
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: prefill_b4_l1024
+    phase: prefill
+    batch: 4
+    length: 1024
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: prefill_b4_l4096
+    phase: prefill
+    batch: 4
+    length: 4096
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: prefill_b4_l8192
+    phase: prefill
+    batch: 4
+    length: 8192
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: prefill_b4_l16384
+    phase: prefill
+    batch: 4
+    length: 16384
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: prefill_b8_l1024
+    phase: prefill
+    batch: 8
+    length: 1024
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: prefill_b8_l4096
+    phase: prefill
+    batch: 8
+    length: 4096
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: prefill_b8_l8192
+    phase: prefill
+    batch: 8
+    length: 8192
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: prefill_b8_l16384
+    phase: prefill
+    batch: 8
+    length: 16384
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: prefill_b16_l1024
+    phase: prefill
+    batch: 16
+    length: 1024
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: prefill_b16_l4096
+    phase: prefill
+    batch: 16
+    length: 4096
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: prefill_b16_l8192
+    phase: prefill
+    batch: 16
+    length: 8192
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: prefill_b16_l16384
+    phase: prefill
+    batch: 16
+    length: 16384
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: training_forward_b1_l1024
+    phase: training_forward
+    batch: 1
+    length: 1024
+    answer: 128
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: training_forward_b1_l4096
+    phase: training_forward
+    batch: 1
+    length: 4096
+    answer: 128
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: training_forward_b1_l8192
+    phase: training_forward
+    batch: 1
+    length: 8192
+    answer: 128
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: training_forward_b1_l16384
+    phase: training_forward
+    batch: 1
+    length: 16384
+    answer: 128
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: training_forward_b4_l1024
+    phase: training_forward
+    batch: 4
+    length: 1024
+    answer: 128
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: training_forward_b4_l4096
+    phase: training_forward
+    batch: 4
+    length: 4096
+    answer: 128
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: training_forward_b4_l8192
+    phase: training_forward
+    batch: 4
+    length: 8192
+    answer: 128
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: training_forward_b4_l16384
+    phase: training_forward
+    batch: 4
+    length: 16384
+    answer: 128
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: training_forward_b8_l1024
+    phase: training_forward
+    batch: 8
+    length: 1024
+    answer: 128
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: training_forward_b8_l4096
+    phase: training_forward
+    batch: 8
+    length: 4096
+    answer: 128
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: training_forward_b8_l8192
+    phase: training_forward
+    batch: 8
+    length: 8192
+    answer: 128
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: training_forward_b8_l16384
+    phase: training_forward
+    batch: 8
+    length: 16384
+    answer: 128
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: training_forward_b16_l1024
+    phase: training_forward
+    batch: 16
+    length: 1024
+    answer: 128
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: training_forward_b16_l4096
+    phase: training_forward
+    batch: 16
+    length: 4096
+    answer: 128
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: training_forward_b16_l8192
+    phase: training_forward
+    batch: 16
+    length: 8192
+    answer: 128
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: training_forward_b16_l16384
+    phase: training_forward
+    batch: 16
+    length: 16384
+    answer: 128
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: decode_b1_l128
+    phase: decode
+    batch: 1
+    length: 128
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: decode_b1_l1024
+    phase: decode
+    batch: 1
+    length: 1024
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: decode_b1_l4096
+    phase: decode
+    batch: 1
+    length: 4096
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: decode_b1_l8192
+    phase: decode
+    batch: 1
+    length: 8192
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: decode_b4_l128
+    phase: decode
+    batch: 4
+    length: 128
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: decode_b4_l1024
+    phase: decode
+    batch: 4
+    length: 1024
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: decode_b4_l4096
+    phase: decode
+    batch: 4
+    length: 4096
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: decode_b4_l8192
+    phase: decode
+    batch: 4
+    length: 8192
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: decode_b8_l128
+    phase: decode
+    batch: 8
+    length: 128
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: decode_b8_l1024
+    phase: decode
+    batch: 8
+    length: 1024
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: decode_b8_l4096
+    phase: decode
+    batch: 8
+    length: 4096
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: decode_b8_l8192
+    phase: decode
+    batch: 8
+    length: 8192
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: decode_b16_l128
+    phase: decode
+    batch: 16
+    length: 128
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: decode_b16_l1024
+    phase: decode
+    batch: 16
+    length: 1024
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: decode_b16_l4096
+    phase: decode
+    batch: 16
+    length: 4096
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  - id: decode_b16_l8192
+    phase: decode
+    batch: 16
+    length: 8192
+    answer: 0
+    coefficient: 1.0
+    max_slowdown_ratio: 1.05
+  partition_answer_lengths:
+  - 128
+  raw_seeds_scales:
+  - - 17
+    - 1.0
+  - - 991
+    - 3.0
+  - - 3
+    - 0.0
+  raw_extra_lengths:
+  - 128
+  - 16384
+  external_max_abs_less_than: 0.05
+  rounds: 5
+  require_flashinfer_hopper_fa3: true
+  backward: false
+schema_version: 1
+gpu:
+  name: H200
+  compute_capability:
+  - 9
+  - 0
+  cuda_arch: 90a
+kernel:
+  source: kernels/unified_attn_ext.cu
+  snapshot: kernels/snapshots/g6_11_combined.cu
+  sha256: 86d0fb74648abf82b92ce3a3f08b1480f17fbdfcb028705c43dbd0ddc9571897
+  entrypoints:
+    prefill: unified_prefill
+    decode: unified_decode
+  manifest: kernels/manifest.json
+  validation: validation.json
+workload:
+  dtype: bfloat16
+  layout: BHSD
+  contiguous: true
+  causal: true
+  query_heads: 32
+  kv_heads: 8
+  head_dim: 128
+  batches:
+  - 1
+  - 4
+  - 8
+  - 16
+  prefill_lengths:
+  - 1024
+  - 4096
+  - 8192
+  - 16384
+  decode_context_lengths:
+  - 128
+  - 1024
+  - 4096
+  - 8192
+  decode_query_length: 1
+build:
+  torch_cuda_arch_list: 9.0a
+  cuda_flags:
+  - -O3
+  - -std=c++17
+  - -gencode=arch=compute_90a,code=sm_90a
+  - -DCUTLASS_ARCH_MMA_SM90_SUPPORTED
+  cxx_flags:
+  - -std=c++17
+  - -DCUTLASS_ARCH_MMA_SM90_SUPPORTED
+  link_flags:
+  - -lcuda
+  cutlass_include_env: CUTLASS_INCLUDE_DIR
+  fast_math: false
+baselines:
+  prefill: FlashAttention-3
+  decode: FlashInfer; fastest numerically qualified screened variant per shape
+  hopper_fa3_tensor_core_comparison: true
+  selection_note: Screen backend, CUDA/Tensor Core mode, layout, PDL, and graph planning; do not assume
+    the default is fastest.
+correctness:
+  internal_check: Exact BF16 storage-bit equality on recorded cases; scoped to validation.json
+  prior_source_bits: Preserved on the recorded comparison grid.
+  external_final_grid_max_abs_less_than: 0.05
+  external_bitwise_equality_required: false
+  cross_gpu_bitwise_equality_claimed: false
+  backward_in_scope: false
+  validation_origin: Archived GPU runs; no GPU tests performed while packaging.
+recorded_timing:
+  boundary: Matched grouped CUDA-graph replay for all compared implementations
+  alternating_rounds: 5
+  max_calls_per_graph: 32
+  graph_output_size_budget_bytes: 268435456
+  excludes:
+  - compilation
+  - warmup
+  - graph capture
+  - FlashInfer planning
+  - KV cache packing
+  scope: Standalone forward attention; not end-to-end layer or RL throughput.

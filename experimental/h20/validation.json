@@ -1,0 +1,587 @@
+{
+  "selected_source": "kernels/unified_attn_ext.cu",
+  "sha256": "942b8bf9f739b3c6825a28b6914ad6bed83160dbcca71e4448f2d2a5dd2d1445",
+  "immutable_snapshot": "kernels/snapshots/g6_17_combined_current_stream.cu",
+  "original_source": "unified_rl_kernel_opt_gpt6/h20_opt_round2/kernels/unified_attn_ext_stream.cu",
+  "source_bound_final_grid": {
+    "record": "unified_rl_kernel_opt_gpt6/h20_opt_round2/results/attention_final_paired.json",
+    "record_sha256": "3fac812025acabb6b6890715e13c5f0711d43b3dfe618360eee8f0d314ca123b",
+    "source_key": "unified_attn_ext_stream",
+    "torch": "2.8.0+cu126",
+    "cases": 32,
+    "rows": [
+      {
+        "phase": "prefill",
+        "batch": 1,
+        "length": 1024,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 0.08804900199174881,
+          "unified_attn_ext_stream": 0.08595699816942215,
+          "FA3": 0.0795769989490509
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 1,
+        "length": 4096,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 1.0528719425201416,
+          "unified_attn_ext_stream": 1.047044038772583,
+          "FA3": 1.0083359479904175
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 1,
+        "length": 8192,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 4.015384197235107,
+          "unified_attn_ext_stream": 3.999079942703247,
+          "FA3": 3.9171600341796875
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 1,
+        "length": 16384,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 15.688735961914062,
+          "unified_attn_ext_stream": 15.652864456176758,
+          "FA3": 15.479472160339355
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 4,
+        "length": 1024,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 0.34195199608802795,
+          "unified_attn_ext_stream": 0.3387959897518158,
+          "FA3": 0.29058799147605896
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 4,
+        "length": 4096,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 4.243616104125977,
+          "unified_attn_ext_stream": 4.226480007171631,
+          "FA3": 4.0196638107299805
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.0078125
+      },
+      {
+        "phase": "prefill",
+        "batch": 4,
+        "length": 8192,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 16.227712631225586,
+          "unified_attn_ext_stream": 16.192224502563477,
+          "FA3": 15.7543363571167
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 4,
+        "length": 16384,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 63.416351318359375,
+          "unified_attn_ext_stream": 63.31180953979492,
+          "FA3": 62.348480224609375
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 8,
+        "length": 1024,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 0.6779199838638306,
+          "unified_attn_ext_stream": 0.6716399788856506,
+          "FA3": 0.5699440240859985
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 8,
+        "length": 4096,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 8.452799797058105,
+          "unified_attn_ext_stream": 8.432703971862793,
+          "FA3": 8.02774429321289
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 8,
+        "length": 8192,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 32.33689498901367,
+          "unified_attn_ext_stream": 32.26224136352539,
+          "FA3": 31.457216262817383
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 8,
+        "length": 16384,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 125.83673858642578,
+          "unified_attn_ext_stream": 125.48934173583984,
+          "FA3": 123.80716705322266
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 16,
+        "length": 1024,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 1.325760006904602,
+          "unified_attn_ext_stream": 1.3206720352172852,
+          "FA3": 1.1232479810714722
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.015625
+      },
+      {
+        "phase": "prefill",
+        "batch": 16,
+        "length": 4096,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 16.683712005615234,
+          "unified_attn_ext_stream": 16.632320404052734,
+          "FA3": 15.946784019470215
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 16,
+        "length": 8192,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 64.14678192138672,
+          "unified_attn_ext_stream": 63.93964767456055,
+          "FA3": 62.536033630371094
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 16,
+        "length": 16384,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 251.84950256347656,
+          "unified_attn_ext_stream": 251.04159545898438,
+          "FA3": 247.51919555664062
+        },
+        "external_name": "FA3",
+        "external_max_abs": 0.0078125
+      },
+      {
+        "phase": "decode",
+        "batch": 1,
+        "length": 128,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 0.005332999862730503,
+          "unified_attn_ext_stream": 0.00532800005748868,
+          "FlashInfer0.6.18.post1[fa3,TC,PDL,graph,HND,plan_graph=False]": 0.011374999769032001,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]": 0.0059540001675486565
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]",
+        "external_max_abs": 0.001953125
+      },
+      {
+        "phase": "decode",
+        "batch": 1,
+        "length": 1024,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 0.02704700082540512,
+          "unified_attn_ext_stream": 0.011649999767541885,
+          "FlashInfer0.6.18.post1[fa3,TC,PDL,graph,NHD,plan_graph=True]": 0.042323999106884,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]": 0.008747000247240067
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]",
+        "external_max_abs": 0.0009765625
+      },
+      {
+        "phase": "decode",
+        "batch": 1,
+        "length": 4096,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 0.03274200111627579,
+          "unified_attn_ext_stream": 0.035144999623298645,
+          "FlashInfer0.6.18.post1[fa3,TC,noPDL,graph,NHD,plan_graph=True]": 0.15200500190258026,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=True]": 0.014183999970555305
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=True]",
+        "external_max_abs": 0.00048828125
+      },
+      {
+        "phase": "decode",
+        "batch": 1,
+        "length": 8192,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 0.05934000015258789,
+          "unified_attn_ext_stream": 0.05942000076174736,
+          "FlashInfer0.6.18.post1[fa3,TC,noPDL,graph,HND,plan_graph=True]": 0.3026610016822815,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]": 0.01916000060737133
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]",
+        "external_max_abs": 0.000244140625
+      },
+      {
+        "phase": "decode",
+        "batch": 4,
+        "length": 128,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 0.005508000031113625,
+          "unified_attn_ext_stream": 0.005510999821126461,
+          "FlashInfer0.6.18.post1[fa3,TC,PDL,graph,HND,plan_graph=False]": 0.020123999565839767,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]": 0.006192999891936779
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]",
+        "external_max_abs": 0.001953125
+      },
+      {
+        "phase": "decode",
+        "batch": 4,
+        "length": 1024,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 0.027643000707030296,
+          "unified_attn_ext_stream": 0.016600999981164932,
+          "FlashInfer0.6.18.post1[fa3,TC,PDL,graph,NHD,plan_graph=False]": 0.08229999989271164,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]": 0.013806000351905823
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]",
+        "external_max_abs": 0.0009765625
+      },
+      {
+        "phase": "decode",
+        "batch": 4,
+        "length": 4096,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 0.07007700204849243,
+          "unified_attn_ext_stream": 0.05439300090074539,
+          "FlashInfer0.6.18.post1[fa3,TC,PDL,graph,HND,plan_graph=False]": 0.3042519986629486,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]": 0.03386300057172775
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]",
+        "external_max_abs": 0.00048828125
+      },
+      {
+        "phase": "decode",
+        "batch": 4,
+        "length": 8192,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 0.12960200011730194,
+          "unified_attn_ext_stream": 0.10106900334358215,
+          "FlashInfer0.6.18.post1[fa3,TC,PDL,graph,NHD,plan_graph=True]": 0.5981349945068359,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]": 0.056244999170303345
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]",
+        "external_max_abs": 0.000244140625
+      },
+      {
+        "phase": "decode",
+        "batch": 8,
+        "length": 128,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 0.007864000275731087,
+          "unified_attn_ext_stream": 0.005526000168174505,
+          "FlashInfer0.6.18.post1[fa3,TC,noPDL,graph,HND,plan_graph=False]": 0.03683499991893768,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]": 0.00646999990567565
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "decode",
+        "batch": 8,
+        "length": 1024,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 0.044791001826524734,
+          "unified_attn_ext_stream": 0.027286000549793243,
+          "FlashInfer0.6.18.post1[fa3,TC,noPDL,graph,HND,plan_graph=True]": 0.16108299791812897,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]": 0.01909700036048889
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]",
+        "external_max_abs": 0.0009765625
+      },
+      {
+        "phase": "decode",
+        "batch": 8,
+        "length": 4096,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 0.10699400305747986,
+          "unified_attn_ext_stream": 0.08683600276708603,
+          "FlashInfer0.6.18.post1[fa3,TC,noPDL,graph,NHD,plan_graph=True]": 0.6011729836463928,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]": 0.05638200044631958
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]",
+        "external_max_abs": 0.00048828125
+      },
+      {
+        "phase": "decode",
+        "batch": 8,
+        "length": 8192,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 0.20350299775600433,
+          "unified_attn_ext_stream": 0.16382600367069244,
+          "FlashInfer0.6.18.post1[fa3,TC,noPDL,graph,HND,plan_graph=True]": 1.1928269863128662,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]": 0.10063499957323074
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]",
+        "external_max_abs": 0.000244140625
+      },
+      {
+        "phase": "decode",
+        "batch": 16,
+        "length": 128,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 0.013187999837100506,
+          "unified_attn_ext_stream": 0.007860999554395676,
+          "FlashInfer0.6.18.post1[fa3,TC,noPDL,graph,HND,plan_graph=True]": 0.060903001576662064,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]": 0.00901699997484684
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,NHD,plan_graph=False]",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "decode",
+        "batch": 16,
+        "length": 1024,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 0.056873999536037445,
+          "unified_attn_ext_stream": 0.0442270003259182,
+          "FlashInfer0.6.18.post1[fa3,TC,PDL,graph,HND,plan_graph=True]": 0.2781359851360321,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]": 0.03107300028204918
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]",
+        "external_max_abs": 0.0009765625
+      },
+      {
+        "phase": "decode",
+        "batch": 16,
+        "length": 4096,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 0.18588200211524963,
+          "unified_attn_ext_stream": 0.1468449980020523,
+          "FlashInfer0.6.18.post1[fa3,TC,PDL,graph,NHD,plan_graph=False]": 1.048869013786316,
+          "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]": 0.09757299721240997
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,PDL,graph,HND,plan_graph=False]",
+        "external_max_abs": 0.00048828125
+      },
+      {
+        "phase": "decode",
+        "batch": 16,
+        "length": 8192,
+        "raw_equal": {
+          "iteration96_stream": true,
+          "unified_attn_ext_stream": true
+        },
+        "changed_input_graph_pass": true,
+        "median_ms": {
+          "iteration96_stream": 0.3614009916782379,
+          "unified_attn_ext_stream": 0.2872459888458252,
+          "FlashInfer0.6.18.post1[fa3,TC,noPDL,graph,HND,plan_graph=True]": 2.0838510990142822,
+          "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,HND,plan_graph=False]": 0.19027499854564667
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,HND,plan_graph=False]",
+        "external_max_abs": 0.00048828125
+      }
+    ]
+  },
+  "expanded_validation": [
+    {
+      "record": "unified_rl_kernel_opt_gpt6/results/final_raw_validation.json",
+      "record_sha256": "875b7d99e95e16e55212a97a76714404281dcee71dcc69229272f67af8c874a6",
+      "case_rows": 60,
+      "boolean_checks_passed": 120,
+      "changed_input_graph_cases_passed": 48,
+      "all_executed_checks_passed": true,
+      "not_run": "Changed-input graph test omitted at length16384"
+    }
+  ],
+  "note": "Saved GPU evidence; packaging does not rerun GPU tests. H20 expanded tests are on the arithmetic-identical pre-stream-adapter parent; current-stream adapter has its own 32-cell qualification."
+}

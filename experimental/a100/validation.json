@@ -1,0 +1,589 @@
+{
+  "selected_source": "kernels/unified_attn_ext.cu",
+  "sha256": "2c28a4ca9f606452ea32c07e429f7878aac664f554001a5168512c72050a6665",
+  "immutable_snapshot": "kernels/snapshots/g6_a16_tail_safe.cu",
+  "original_source": "auto-pilot-kernel-a100/gpt6_20260906/kernels/g6_a16_tail_safe.cu",
+  "source_bound_final_grid": {
+    "record": "auto-pilot-kernel-a100/gpt6_20260906/results/final_paired.json",
+    "record_sha256": "eff1dfd23e088db003c73cf7e075f1f1817ac000b00d4abb4e65f0140946a7e5",
+    "source_key": "g6_a16_tail_safe",
+    "torch": "2.8.0+cu128",
+    "cases": 32,
+    "rows": [
+      {
+        "phase": "prefill",
+        "batch": 1,
+        "length": 1024,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 0.1132970005273819,
+          "g6_a16_tail_safe": 0.09656599909067154,
+          "iteration309_stream": 0.11280199885368347,
+          "FA2": 0.08207900077104568
+        },
+        "external_name": "FA2",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 1,
+        "length": 4096,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 1.1644680500030518,
+          "g6_a16_tail_safe": 1.0331720113754272,
+          "iteration309_stream": 1.0226160287857056,
+          "FA2": 0.7836160063743591
+        },
+        "external_name": "FA2",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 1,
+        "length": 8192,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 4.3220720291137695,
+          "g6_a16_tail_safe": 3.8617920875549316,
+          "iteration309_stream": 3.3585760593414307,
+          "FA2": 2.829224109649658
+        },
+        "external_name": "FA2",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 1,
+        "length": 16384,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 16.552703857421875,
+          "g6_a16_tail_safe": 15.102928161621094,
+          "iteration309_stream": 12.65715217590332,
+          "FA2": 10.686351776123047
+        },
+        "external_name": "FA2",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 4,
+        "length": 1024,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 0.3647960126399994,
+          "g6_a16_tail_safe": 0.30399200320243835,
+          "iteration309_stream": 0.3668360114097595,
+          "FA2": 0.24173599481582642
+        },
+        "external_name": "FA2",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 4,
+        "length": 4096,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 4.396448135375977,
+          "g6_a16_tail_safe": 3.924207925796509,
+          "iteration309_stream": 3.93393611907959,
+          "FA2": 2.868511915206909
+        },
+        "external_name": "FA2",
+        "external_max_abs": 0.0078125
+      },
+      {
+        "phase": "prefill",
+        "batch": 4,
+        "length": 8192,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 16.79680061340332,
+          "g6_a16_tail_safe": 15.105055809020996,
+          "iteration309_stream": 12.648287773132324,
+          "FA2": 10.850751876831055
+        },
+        "external_name": "FA2",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 4,
+        "length": 16384,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 65.3987808227539,
+          "g6_a16_tail_safe": 60.30918502807617,
+          "iteration309_stream": 49.08201599121094,
+          "FA2": 42.44432067871094
+        },
+        "external_name": "FA2",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 8,
+        "length": 1024,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 0.6929439902305603,
+          "g6_a16_tail_safe": 0.5727360248565674,
+          "iteration309_stream": 0.6975359916687012,
+          "FA2": 0.44701600074768066
+        },
+        "external_name": "FA2",
+        "external_max_abs": 0.0078125
+      },
+      {
+        "phase": "prefill",
+        "batch": 8,
+        "length": 4096,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 8.69491195678711,
+          "g6_a16_tail_safe": 7.842463970184326,
+          "iteration309_stream": 7.869952201843262,
+          "FA2": 5.635712146759033
+        },
+        "external_name": "FA2",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 8,
+        "length": 8192,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 33.41011047363281,
+          "g6_a16_tail_safe": 30.44633674621582,
+          "iteration309_stream": 24.994016647338867,
+          "FA2": 21.80396842956543
+        },
+        "external_name": "FA2",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 8,
+        "length": 16384,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 130.6367645263672,
+          "g6_a16_tail_safe": 120.86752319335938,
+          "iteration309_stream": 98.18473815917969,
+          "FA2": 84.62905883789062
+        },
+        "external_name": "FA2",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 16,
+        "length": 1024,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 1.3575999736785889,
+          "g6_a16_tail_safe": 1.1384639739990234,
+          "iteration309_stream": 1.3675040006637573,
+          "FA2": 0.8582720160484314
+        },
+        "external_name": "FA2",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 16,
+        "length": 4096,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 17.33660888671875,
+          "g6_a16_tail_safe": 15.618080139160156,
+          "iteration309_stream": 15.637696266174316,
+          "FA2": 11.324640274047852
+        },
+        "external_name": "FA2",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 16,
+        "length": 8192,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 66.5733413696289,
+          "g6_a16_tail_safe": 60.96092987060547,
+          "iteration309_stream": 50.33545684814453,
+          "FA2": 43.35878372192383
+        },
+        "external_name": "FA2",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "prefill",
+        "batch": 16,
+        "length": 16384,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 260.68505859375,
+          "g6_a16_tail_safe": 241.32838439941406,
+          "iteration309_stream": 196.04013061523438,
+          "FA2": 168.7474822998047
+        },
+        "external_name": "FA2",
+        "external_max_abs": 0.0078125
+      },
+      {
+        "phase": "decode",
+        "batch": 1,
+        "length": 128,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 0.008173000067472458,
+          "g6_a16_tail_safe": 0.006080999970436096,
+          "iteration309_stream": 0.008154000155627728,
+          "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,HND,plan_graph=False]": 0.0076339999213814735
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,HND,plan_graph=False]",
+        "external_max_abs": 0.001953125
+      },
+      {
+        "phase": "decode",
+        "batch": 1,
+        "length": 1024,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 0.015929000452160835,
+          "g6_a16_tail_safe": 0.014808000065386295,
+          "iteration309_stream": 0.01592399924993515,
+          "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,NHD,plan_graph=False]": 0.01142400037497282
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,NHD,plan_graph=False]",
+        "external_max_abs": 0.0009765625
+      },
+      {
+        "phase": "decode",
+        "batch": 1,
+        "length": 4096,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 0.040323998779058456,
+          "g6_a16_tail_safe": 0.03915800154209137,
+          "iteration309_stream": 0.0402659997344017,
+          "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,NHD,plan_graph=False]": 0.018735000863671303
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,NHD,plan_graph=False]",
+        "external_max_abs": 0.00048828125
+      },
+      {
+        "phase": "decode",
+        "batch": 1,
+        "length": 8192,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 0.0715159997344017,
+          "g6_a16_tail_safe": 0.07186400145292282,
+          "iteration309_stream": 0.07162000238895416,
+          "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,HND,plan_graph=False]": 0.023868000134825706
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,HND,plan_graph=False]",
+        "external_max_abs": 0.000244140625
+      },
+      {
+        "phase": "decode",
+        "batch": 4,
+        "length": 128,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 0.008410000242292881,
+          "g6_a16_tail_safe": 0.00621799984946847,
+          "iteration309_stream": 0.008407999761402607,
+          "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,NHD,plan_graph=False]": 0.007919000461697578
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,NHD,plan_graph=False]",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "decode",
+        "batch": 4,
+        "length": 1024,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 0.02404800057411194,
+          "g6_a16_tail_safe": 0.023876000195741653,
+          "iteration309_stream": 0.023739999160170555,
+          "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,NHD,plan_graph=False]": 0.018269000574946404
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,NHD,plan_graph=False]",
+        "external_max_abs": 0.0009765625
+      },
+      {
+        "phase": "decode",
+        "batch": 4,
+        "length": 4096,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 0.07483399659395218,
+          "g6_a16_tail_safe": 0.07479099929332733,
+          "iteration309_stream": 0.07471899688243866,
+          "FlashInfer0.6.18.post1[fa2,CUDA,noPDL,graph,HND,plan_graph=True]": 0.05338599905371666
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,CUDA,noPDL,graph,HND,plan_graph=True]",
+        "external_max_abs": 0.00048828125
+      },
+      {
+        "phase": "decode",
+        "batch": 4,
+        "length": 8192,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 0.1392509937286377,
+          "g6_a16_tail_safe": 0.1392669975757599,
+          "iteration309_stream": 0.13926799595355988,
+          "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,HND,plan_graph=True]": 0.09098199754953384
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,HND,plan_graph=True]",
+        "external_max_abs": 0.00048828125
+      },
+      {
+        "phase": "decode",
+        "batch": 8,
+        "length": 128,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 0.010715999640524387,
+          "g6_a16_tail_safe": 0.0064860000275075436,
+          "iteration309_stream": 0.010715000331401825,
+          "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,NHD,plan_graph=False]": 0.008186000399291515
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,NHD,plan_graph=False]",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "decode",
+        "batch": 8,
+        "length": 1024,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 0.03901899978518486,
+          "g6_a16_tail_safe": 0.03922199830412865,
+          "iteration309_stream": 0.03918299823999405,
+          "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,HND,plan_graph=True]": 0.024983000010252
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,HND,plan_graph=True]",
+        "external_max_abs": 0.001953125
+      },
+      {
+        "phase": "decode",
+        "batch": 8,
+        "length": 4096,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 0.11760900169610977,
+          "g6_a16_tail_safe": 0.11767099797725677,
+          "iteration309_stream": 0.11772599816322327,
+          "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,HND,plan_graph=True]": 0.091279998421669
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,HND,plan_graph=True]",
+        "external_max_abs": 0.00048828125
+      },
+      {
+        "phase": "decode",
+        "batch": 8,
+        "length": 8192,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 0.22779199481010437,
+          "g6_a16_tail_safe": 0.22770799696445465,
+          "iteration309_stream": 0.22863900661468506,
+          "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,HND,plan_graph=True]": 0.16598300635814667
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,HND,plan_graph=True]",
+        "external_max_abs": 0.00048828125
+      },
+      {
+        "phase": "decode",
+        "batch": 16,
+        "length": 128,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 0.014712000265717506,
+          "g6_a16_tail_safe": 0.009085999801754951,
+          "iteration309_stream": 0.01473500020802021,
+          "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,HND,plan_graph=False]": 0.012122999876737595
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,HND,plan_graph=False]",
+        "external_max_abs": 0.00390625
+      },
+      {
+        "phase": "decode",
+        "batch": 16,
+        "length": 1024,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 0.0662660002708435,
+          "g6_a16_tail_safe": 0.06628700345754623,
+          "iteration309_stream": 0.06628400087356567,
+          "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,HND,plan_graph=False]": 0.05248799920082092
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,HND,plan_graph=False]",
+        "external_max_abs": 0.0009765625
+      },
+      {
+        "phase": "decode",
+        "batch": 16,
+        "length": 4096,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 0.23197700083255768,
+          "g6_a16_tail_safe": 0.2321079969406128,
+          "iteration309_stream": 0.23196400701999664,
+          "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,HND,plan_graph=True]": 0.17037099599838257
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,HND,plan_graph=True]",
+        "external_max_abs": 0.00048828125
+      },
+      {
+        "phase": "decode",
+        "batch": 16,
+        "length": 8192,
+        "raw_equal": {
+          "consistent_reference": true,
+          "g6_a16_tail_safe": true
+        },
+        "median_ms": {
+          "consistent_reference": 0.45149698853492737,
+          "g6_a16_tail_safe": 0.45110398530960083,
+          "iteration309_stream": 0.4510110020637512,
+          "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,HND,plan_graph=True]": 0.3251720070838928
+        },
+        "external_name": "FlashInfer0.6.18.post1[fa2,TC,noPDL,graph,HND,plan_graph=True]",
+        "external_max_abs": 0.00048828125
+      }
+    ]
+  },
+  "expanded_validation": [
+    {
+      "record": "auto-pilot-kernel-a100/gpt6_20260906/results/attention_raw_selected.json",
+      "record_sha256": "875b7d99e95e16e55212a97a76714404281dcee71dcc69229272f67af8c874a6",
+      "case_rows": 60,
+      "boolean_checks_passed": 120,
+      "changed_input_graph_cases_passed": 48,
+      "all_executed_checks_passed": true,
+      "not_run": "Changed-input graph test omitted at length16384"
+    },
+    {
+      "record": "auto-pilot-kernel-a100/gpt6_20260906/results/attention_partition_selected.json",
+      "record_sha256": "af54b6560959d7f6db284a58fbc2e781d4ceeb9472edce3808a673d252a49437",
+      "case_rows": 64,
+      "boolean_checks_passed": 128,
+      "changed_input_graph_cases_passed": 0,
+      "all_executed_checks_passed": true,
+      "not_run": null
+    },
+    {
+      "record": "auto-pilot-kernel-a100/gpt6_20260906/results/attention_batch_selected.json",
+      "record_sha256": "3f87e87ff0468ac72f6c4a3c25bca199c489db35ada519340899532735ab7aa4",
+      "case_rows": 36,
+      "boolean_checks_passed": 36,
+      "changed_input_graph_cases_passed": 0,
+      "all_executed_checks_passed": true,
+      "not_run": null
+    }
+  ],
+  "note": "Saved GPU evidence; packaging does not rerun GPU tests."
+}

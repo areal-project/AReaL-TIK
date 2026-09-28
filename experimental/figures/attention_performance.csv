@@ -1,0 +1,7 @@
+gpu,phase,operator,speedup,cells,campaign
+A100,decode,attention,0.7773322780192207,16,archived_gpt6_20260905_06
+A100,prefill,attention,0.760319825570837,4,archived_gpt6_20260905_06
+H20,decode,attention,0.7098994371531437,16,fresh_20260906
+H20,prefill,attention,0.9640957972812163,4,fresh_20260906
+H200,decode,attention,0.9330581946436373,16,archived_gpt6_20260905_06
+H200,prefill,attention,0.7923795003660299,4,archived_gpt6_20260905_06

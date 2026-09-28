@@ -1,0 +1,29 @@
+{
+  "gpus": {
+    "h200": {
+      "selected_sha256": "86d0fb74648abf82b92ce3a3f08b1480f17fbdfcb028705c43dbd0ddc9571897",
+      "selected_snapshot": "kernels/snapshots/g6_11_combined.cu",
+      "counts": {
+        "snapshots": 48,
+        "snapshots-demo": 221
+      }
+    },
+    "a100": {
+      "selected_sha256": "2c28a4ca9f606452ea32c07e429f7878aac664f554001a5168512c72050a6665",
+      "selected_snapshot": "kernels/snapshots/g6_a16_tail_safe.cu",
+      "counts": {
+        "snapshots": 94,
+        "snapshots-demo": 133
+      }
+    },
+    "h20": {
+      "selected_sha256": "942b8bf9f739b3c6825a28b6914ad6bed83160dbcca71e4448f2d2a5dd2d1445",
+      "selected_snapshot": "kernels/snapshots/g6_17_combined_current_stream.cu",
+      "counts": {
+        "snapshots": 77,
+        "snapshots-demo": 114
+      }
+    }
+  },
+  "scope": "Standalone unified forward attention for H20, H200, and A100; source snapshots and recorded correctness evidence."
+}
