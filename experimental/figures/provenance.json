@@ -1,12 +1,17 @@
 {
   "method_figure": {
-    "source_archive": "auto_pilot_overleaf/figures/optimization_ir_system_view.pdf",
-    "source_sha256": "00edab2e74e363fdac20aa12e141952cd08dce7a9aa0d1fe3cf226beb7ba2716",
-    "rendering": "First PDF page rendered at 108 dpi without content changes"
+    "source_archive": "2026_AReaL_TIK_Arxiv/figures/optimization_ir_system_view.pdf",
+    "source_sha256": "c849ff61c4739b2df56ea5c223cc005e63ecc83f78787d91b8100559d60c8fd7",
+    "rendering": "First PDF page rendered at 108 dpi (1440 x 1370 pixels) without content changes",
+    "packaged_pdf": "assets/optimization_ir_system_view.pdf",
+    "packaged_pdf_sha256": "c849ff61c4739b2df56ea5c223cc005e63ecc83f78787d91b8100559d60c8fd7",
+    "rendered_asset": "assets/optimization_ir_system_view.png",
+    "rendered_asset_sha256": "c68d76c193b7d89a88e1d40c5a300385cbddaa2279c879ce144f1b491bdd5eff"
   },
   "performance": {
     "data_file": "experimental/figures/attention_performance.csv",
     "rendered_asset": "assets/attention_performance.svg",
+    "rendered_asset_sha256": "700dfb7e9f24721284f14ece12ba137f6c77dc7ee529196330790974461097ad",
     "source_archive": "auto_pilot_overleaf/plots/data/gpt6_20260906/figure11_operator_summary.csv",
     "source_sha256": "51ce8490f13145b18f53185ca30e25285471453aab86bba2fbd3c4f1e3e6df30",
     "selection": "Six attention rows; all numeric field values preserved verbatim",
@@ -15,13 +20,13 @@
     "decode_domain": "Batches 1, 4, 8, 16; context lengths 128, 1024, 4096, 8192 (16 cells per GPU)",
     "note": "Existing manuscript Figure 11 attention results. Different workload aggregation from the full 32-cell validation grids; not new measurements.",
     "style_source": {
-      "source_archive": "auto_pilot_overleaf/figures-source/plot_evaluation_tables.py",
-      "source_sha256": "5a9443f76a094c12df7b4f9a00ce0f6e02811c8bdead3389c65064ab4a899f1e",
-      "style": "Times New Roman; original GPU colors; thin black frames/outlines; dashed grids; compact three-GPU layout"
+      "source_archive": "2026_AReaL_TIK_Arxiv/plots/operator_speedup.pdf",
+      "source_sha256": "f9dfbebf3fe28b57646d21ef3b6baebedf588801b76c523fb6b26e19292fce1e",
+      "style": "Gill Sans MT; original GPU colors; thin black frames/outlines; dashed grids; compact attention-only three-GPU layout"
     },
     "readme_rendering": {
-      "font_family": "Times New Roman",
-      "font_embedding": "SVG glyph outlines from TimesNewRomanPSMT and TimesNewRomanPS-BoldMT; font substitution disabled",
+      "font_family": "Gill Sans MT",
+      "font_embedding": "SVG glyph outlines from GillSansMT and GillSansMT-Bold; font substitution disabled",
       "case_counts_per_gpu": {
         "prefill": 4,
         "decode": 16
@@ -55,14 +60,13 @@
     }
   },
   "background_figure": {
-    "source_archive": "auto_pilot_overleaf/eurosys2027_overleaf/figures/ppo_grpo_ratio_workflow.pdf",
-    "source_sha256": "113f7d0c3010f401ae5087b1bdfe30fb30635b8bc2ead2a02241753acddebc26",
+    "source_archive": "2026_AReaL_TIK_Arxiv/figures/ppo_grpo_ratio_workflow.pdf",
+    "source_sha256": "e437fbda51bee486b236e3e0faaa15cc4a8897e9cfbb21db42cff29e7f0d5d36",
     "packaged_pdf": "assets/ppo_grpo_ratio_workflow.pdf",
-    "packaged_pdf_sha256": "c15821912528cea2456f1906b193f17ca01e5e590ed085b014ef55ef9c079209",
+    "packaged_pdf_sha256": "e437fbda51bee486b236e3e0faaa15cc4a8897e9cfbb21db42cff29e7f0d5d36",
     "rendered_asset": "assets/ppo_grpo_ratio_workflow.png",
-    "rendered_asset_sha256": "480d95cfd7dcec28b21074160006e9d68c83b8cc0df586a4859618c8ab5a7d45",
-    "modification": "Project heading and PDF author metadata renamed to AReaL-TIK; original vector content, font, layout, and numerical claims otherwise preserved.",
-    "rendering": "First page of the renamed packaged PDF rendered at 432 dpi (1443 x 1366 pixels)",
+    "rendered_asset_sha256": "e04d3dd4434d37cb76bfd75b41c3d85f3774ba67a419b73ee90081c8efc7a506",
+    "rendering": "First PDF page rendered at 432 dpi (1443 x 1366 pixels) without content changes",
     "scope": "Manuscript illustration of the first policy-update minibatch with identical inputs and weights: AReaL recomputes old-policy probabilities; AReaL-TIK directly reuses aligned rollout values. Complete-system motivation, not an additional end-to-end result for this attention release."
   }
 }

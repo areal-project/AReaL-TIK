@@ -66,7 +66,7 @@ measurements, optimization opportunities, and branch histories. The agent uses
 this evidence to propose changes, evaluate candidates, and retain useful branches.
 
 <p align="center">
-  <img src="assets/optimization_ir_system_view.png" width="720" alt="AReaL-TIK agent loop: initialization, action, audit, and lineage management exchange source versions, evidence, and opportunities with the optimization IR." />
+  <a href="assets/optimization_ir_system_view.pdf"><img src="assets/optimization_ir_system_view.png" width="720" alt="AReaL-TIK agent loop: initialization, action, audit, and lineage management exchange source versions, evidence, and opportunities with the optimization IR." /></a>
 </p>
 
 *Framework overview from the accompanying manuscript. The attention harness
